@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 109769806}
   - component: {fileID: 109769807}
   - component: {fileID: 109769808}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 188862168}
   - component: {fileID: 188862169}
   - component: {fileID: 188862170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Attempt at a roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 292013937}
   - component: {fileID: 292013938}
   - component: {fileID: 292013939}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Barn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -798,7 +798,7 @@ GameObject:
   - component: {fileID: 353828528}
   - component: {fileID: 353828529}
   - component: {fileID: 353828530}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: My Best
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -906,7 +906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 433975660}
   - component: {fileID: 433975659}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundTemp (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 535800688}
   - component: {fileID: 535800689}
   - component: {fileID: 535800690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1177,7 +1177,7 @@ GameObject:
   - component: {fileID: 615175337}
   - component: {fileID: 615175338}
   - component: {fileID: 615175339}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HayPile (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1447,7 +1447,7 @@ GameObject:
   - component: {fileID: 828933945}
   - component: {fileID: 828933946}
   - component: {fileID: 828933947}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HayPile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1556,7 +1556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 842622057}
   - component: {fileID: 842622056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundTemp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1719,7 +1719,7 @@ GameObject:
   - component: {fileID: 1076501661}
   - component: {fileID: 1076501662}
   - component: {fileID: 1076501663}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2057,7 +2057,7 @@ GameObject:
   - component: {fileID: 1360801163}
   - component: {fileID: 1360801162}
   - component: {fileID: 1360801161}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2252,6 +2252,7 @@ GameObject:
   - component: {fileID: 1458888684}
   - component: {fileID: 1458888683}
   - component: {fileID: 1458888682}
+  - component: {fileID: 1458888686}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2274,7 +2275,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -2293,7 +2294,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0011780821, y: 0.0005890429}
+  m_Offset: {x: -0.0019752532, y: -0.0010235086}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -2304,7 +2305,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13408178, y: 0.13761601}
+  m_Size: {x: 0.13599649, y: 0.13888021}
   m_EdgeRadius: 0
 --- !u!212 &1458888684
 SpriteRenderer:
@@ -2370,6 +2371,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1458888686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458888681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d27c07e4ad50fec4a9be57929fea3c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformsLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  moveSpeed: 50
+  jumpVelocity: 50
 --- !u!1 &1514731583
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,7 +2477,7 @@ GameObject:
   - component: {fileID: 1697526609}
   - component: {fileID: 1697526610}
   - component: {fileID: 1697526611}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HayPile (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

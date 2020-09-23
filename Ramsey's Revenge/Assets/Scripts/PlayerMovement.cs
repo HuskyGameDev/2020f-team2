@@ -8,8 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask platformsLayerMask;
     private Rigidbody2D rigidbody2d;
     private BoxCollider2D boxCollider2d;
-    public float moveSpeed = 55f;
-    public float jumpVelocity = 130f;
+    public float moveSpeed = 80f;
+    public float jumpVelocity = 200f;
     private float movement;
 
     private void Start()

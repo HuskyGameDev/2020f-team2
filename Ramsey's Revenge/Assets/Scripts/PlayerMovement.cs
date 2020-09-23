@@ -8,8 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask platformsLayerMask;
     private Rigidbody2D rigidbody2d;
     private BoxCollider2D boxCollider2d;
-    public float moveSpeed;
-    public float jumpVelocity;
+    public float moveSpeed = 55f;
+    public float jumpVelocity = 130f;
+    private float movement;
 
     private void Start()
     {
@@ -20,24 +21,32 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        // Move Code
+        movement = Input.GetAxis("Horizontal");
+        //rigidbody2d.AddForce(new Vector2(movement * moveSpeed * Time.deltaTime, 0f));
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            rigidbody2d.velocity = new Vector2(Vector2.left.x * moveSpeed, rigidbody2d.velocity.y);
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            rigidbody2d.velocity = new Vector2(Vector2.right.x * moveSpeed, rigidbody2d.velocity.y);
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
+        }
+
         // Jump Code
         if (IsGrounded() && Input.GetKeyDown(KeyCode.W))
         {
             rigidbody2d.velocity = Vector2.up * jumpVelocity;
-        }
-
-        // Walk Code
-        if (Input.GetKey(KeyCode.A))
-        {
-            Vector3 position = transform.position;
-            position.x -= moveSpeed * Time.deltaTime;
-            transform.position = position;
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            Vector3 position = transform.position;
-            position.x += moveSpeed * Time.deltaTime;
-            transform.position = position;
         }
     }
 

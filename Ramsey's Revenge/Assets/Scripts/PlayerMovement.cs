@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 80f;
     public float jumpVelocity = 200f;
     private float movement;
+    private Vector2 velocity;
 
     private void Start()
     {
@@ -22,23 +23,12 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         // Move Code
-        movement = Input.GetAxis("Horizontal");
-        //rigidbody2d.AddForce(new Vector2(movement * moveSpeed * Time.deltaTime, 0f));
-
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetButton("Horizontal"))
         {
-            rigidbody2d.velocity = new Vector2(Vector2.left.x * moveSpeed, rigidbody2d.velocity.y);
+            movement = Input.GetAxisRaw("Horizontal");
+            rigidbody2d.velocity = new Vector2((movement * moveSpeed), rigidbody2d.velocity.y);
         }
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
-        }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            rigidbody2d.velocity = new Vector2(Vector2.right.x * moveSpeed, rigidbody2d.velocity.y);
-        }
-        if (Input.GetKeyUp(KeyCode.D))
+        if (Input.GetButtonUp("Horizontal"))
         {
             rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
         }
@@ -46,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         // Jump Code
         if (IsGrounded() && Input.GetKeyDown(KeyCode.W))
         {
-            rigidbody2d.velocity = Vector2.up * jumpVelocity;
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpVelocity);
         }
     }
 

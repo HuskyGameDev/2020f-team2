@@ -162,7 +162,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 27145424}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0d50faac0d5cdce4b90522d0a6db66b1, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -311,7 +311,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 103676262}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0d50faac0d5cdce4b90522d0a6db66b1, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -510,7 +510,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 109769805}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6d9917a1f76e4a741b361070eda9d7fe, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1007,7 +1007,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 418822110}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0d50faac0d5cdce4b90522d0a6db66b1, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1865,7 +1865,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1068915190}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0d50faac0d5cdce4b90522d0a6db66b1, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -2411,6 +2411,7 @@ GameObject:
   - component: {fileID: 1458888682}
   - component: {fileID: 1458888686}
   - component: {fileID: 1458888683}
+  - component: {fileID: 1458888687}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2452,7 +2453,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1399622, y: -0.41989338}
+  m_Offset: {x: -0.33754647, y: -0.3918047}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2463,7 +2464,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.1524715, y: 4.1524677}
+  m_Size: {x: 4.1974545, y: 4.09629}
   m_EdgeRadius: 0
 --- !u!212 &1458888684
 SpriteRenderer:
@@ -2548,6 +2549,25 @@ MonoBehaviour:
   jumpVelocity: 200
   left: {fileID: 21300000, guid: bc6c3ff4906552b46995b828df940934, type: 3}
   right: {fileID: 21300000, guid: 6ccaaba879792a94ea668acbebd55d47, type: 3}
+--- !u!95 &1458888687
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458888681}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f24e061bf248434397ad7ff203a558e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1558023141
 GameObject:
   m_ObjectHideFlags: 0
@@ -2845,7 +2865,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1764559410}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0d50faac0d5cdce4b90522d0a6db66b1, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -3025,7 +3045,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 2108462885}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0d50faac0d5cdce4b90522d0a6db66b1, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

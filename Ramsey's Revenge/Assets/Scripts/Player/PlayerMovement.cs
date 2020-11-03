@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private float gravity;
     public Sprite left;
     public Sprite right;
+    private int direction = 0;
 
     private void Start()
     {
@@ -40,14 +41,30 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             rigidbody2d.velocity = new Vector2(Vector2.left.x * moveSpeed, rigidbody2d.velocity.y);
-            this.gameObject.GetComponent<Animator>().enabled = true;
-            this.gameObject.GetComponent<Animator>().Play("MoveLeft");
+            if (IsGrounded())
+            {
+                this.gameObject.GetComponent<Animator>().enabled = true;
+                this.gameObject.GetComponent<Animator>().Play("MoveLeft");
+            }
+            else
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = left;
+            }
+            direction = 1;
         }
         else if (Input.GetKey(KeyCode.D))
         {
             rigidbody2d.velocity = new Vector2(Vector2.right.x * moveSpeed, rigidbody2d.velocity.y);
-            this.gameObject.GetComponent<Animator>().enabled = true;
-            this.gameObject.GetComponent<Animator>().Play("MoveRight");
+            if (IsGrounded())
+            {
+                this.gameObject.GetComponent<Animator>().enabled = true;
+                this.gameObject.GetComponent<Animator>().Play("MoveRight");
+            }
+            else
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = right;
+            }
+            direction = 0;
         }
 
         if (Input.GetKeyUp(KeyCode.A))
@@ -68,8 +85,35 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded() && Input.GetKey(KeyCode.W))
         {
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, Vector2.up.y * jumpVelocity);
-            this.gameObject.GetComponent<Transform>().localRotation = new Quaternion(0f, 0f, 0f, 0f);
-            this.gameObject.GetComponent<Animator>().Play("JumpLeft");
+            //this.gameObject.GetComponent<Transform>().localRotation = new Quaternion(0f, 0f, 0f, 0f);
+            
+            
+        }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            this.gameObject.GetComponent<Animator>().enabled = true;
+            if (direction == 1)
+            {
+                this.gameObject.GetComponent<Animator>().Play("JumpLeft");
+            }
+            else if (direction == 0)
+            {
+                this.gameObject.GetComponent<Animator>().Play("JumpRight");
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            this.gameObject.GetComponent<Animator>().enabled = false;
+            if (direction == 1)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = left;
+            }
+            else if (direction == 0)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = right;
+            }
         }
     }
 

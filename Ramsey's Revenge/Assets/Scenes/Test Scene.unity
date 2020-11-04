@@ -280,6 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27416368}
   - component: {fileID: 27416369}
+  - component: {fileID: 27416371}
   - component: {fileID: 27416370}
   m_Layer: 8
   m_Name: GroundTemp (36)
@@ -352,19 +353,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &27416370
-BoxCollider:
+--- !u!61 &27416370
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27416367}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: -0.0000076293945, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &27416371
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27416367}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &43707192
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 43707193}
   - component: {fileID: 43707194}
+  - component: {fileID: 43707196}
   - component: {fileID: 43707195}
   m_Layer: 8
   m_Name: GroundTemp (33)
@@ -447,19 +471,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &43707195
-BoxCollider:
+--- !u!61 &43707195
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43707192}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &43707196
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43707192}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &62818090
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 62818092}
   - component: {fileID: 62818091}
+  - component: {fileID: 62818094}
   - component: {fileID: 62818093}
   m_Layer: 8
   m_Name: GroundTemp (3)
@@ -542,19 +589,41 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &62818093
-BoxCollider:
+--- !u!61 &62818093
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62818090}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &62818094
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62818090}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &84903669
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 84903670}
   - component: {fileID: 84903671}
+  - component: {fileID: 84903673}
   - component: {fileID: 84903672}
   m_Layer: 8
   m_Name: GroundTemp
@@ -637,19 +707,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &84903672
-BoxCollider:
+--- !u!61 &84903672
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84903669}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &84903673
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84903669}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &103676262
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,6 +901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 109577330}
   - component: {fileID: 109577331}
+  - component: {fileID: 109577333}
   - component: {fileID: 109577332}
   m_Layer: 8
   m_Name: GroundTemp (5)
@@ -881,19 +974,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &109577332
-BoxCollider:
+--- !u!61 &109577332
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109577329}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: -0.0000038146973, y: 0.0000019073486, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &109577333
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109577329}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &109769805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 111762766}
   - component: {fileID: 111762768}
+  - component: {fileID: 111762769}
   - component: {fileID: 111762767}
   m_Layer: 8
   m_Name: GroundTemp (61)
@@ -1034,19 +1150,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &111762767
-BoxCollider:
+--- !u!61 &111762767
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111762765}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0600004, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &111762768
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1097,6 +1226,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &111762769
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111762765}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &114661984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,6 +1245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 114661986}
   - component: {fileID: 114661985}
+  - component: {fileID: 114661988}
   - component: {fileID: 114661987}
   m_Layer: 8
   m_Name: GroundTemp (6)
@@ -1179,19 +1318,41 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &114661987
-BoxCollider:
+--- !u!61 &114661987
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114661984}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0, y: -0.0000009536743, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &114661988
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114661984}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &143792092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 143792093}
   - component: {fileID: 143792094}
+  - component: {fileID: 143792096}
   - component: {fileID: 143792095}
   m_Layer: 8
   m_Name: GroundTemp (26)
@@ -1274,19 +1436,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &143792095
-BoxCollider:
+--- !u!61 &143792095
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143792092}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: -0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &143792096
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143792092}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &152348703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,6 +1481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 152348704}
   - component: {fileID: 152348705}
+  - component: {fileID: 152348707}
   - component: {fileID: 152348706}
   m_Layer: 8
   m_Name: GroundTemp (20)
@@ -1369,19 +1554,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &152348706
-BoxCollider:
+--- !u!61 &152348706
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152348703}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &152348707
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152348703}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &188862167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 234605084}
   - component: {fileID: 234605083}
+  - component: {fileID: 234605086}
   - component: {fileID: 234605085}
   m_Layer: 8
   m_Name: GroundTemp (5)
@@ -1572,19 +1780,41 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &234605085
-BoxCollider:
+--- !u!61 &234605085
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234605082}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0, y: -0.0000019073486, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &234605086
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234605082}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &250920523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,6 +1825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 250920524}
   - component: {fileID: 250920526}
+  - component: {fileID: 250920527}
   - component: {fileID: 250920525}
   m_Layer: 8
   m_Name: GroundTemp (43)
@@ -1617,19 +1848,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &250920525
-BoxCollider:
+--- !u!61 &250920525
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250920523}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &250920526
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1680,6 +1924,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &250920527
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250920523}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &283347041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1690,6 +1943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 283347042}
   - component: {fileID: 283347044}
+  - component: {fileID: 283347045}
   - component: {fileID: 283347043}
   m_Layer: 8
   m_Name: GroundTemp (64)
@@ -1712,19 +1966,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &283347043
-BoxCollider:
+--- !u!61 &283347043
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283347041}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0600004, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &283347044
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1775,6 +2042,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &283347045
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283347041}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &284195928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,6 +2061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 284195929}
   - component: {fileID: 284195930}
+  - component: {fileID: 284195932}
   - component: {fileID: 284195931}
   m_Layer: 8
   m_Name: GroundTemp (4)
@@ -1857,19 +2134,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &284195931
-BoxCollider:
+--- !u!61 &284195931
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284195928}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: -0.0000038146973, y: 0.0000019073486, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &284195932
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284195928}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &292013936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,6 +2563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 336434520}
   - component: {fileID: 336434521}
+  - component: {fileID: 336434523}
   - component: {fileID: 336434522}
   m_Layer: 8
   m_Name: GroundTemp (16)
@@ -2336,19 +2636,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &336434522
-BoxCollider:
+--- !u!61 &336434522
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336434519}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0.00000047683716, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &336434523
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336434519}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &341524655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,6 +2681,7 @@ GameObject:
   m_Component:
   - component: {fileID: 341524656}
   - component: {fileID: 341524658}
+  - component: {fileID: 341524659}
   - component: {fileID: 341524657}
   m_Layer: 8
   m_Name: GroundTemp (55)
@@ -2381,19 +2704,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &341524657
-BoxCollider:
+--- !u!61 &341524657
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341524655}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: -0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &341524658
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2444,6 +2780,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &341524659
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341524655}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &353828527
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,6 +2908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 362000443}
   - component: {fileID: 362000445}
+  - component: {fileID: 362000446}
   - component: {fileID: 362000444}
   m_Layer: 8
   m_Name: GroundTemp (52)
@@ -2585,19 +2931,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &362000444
-BoxCollider:
+--- !u!61 &362000444
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362000442}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &362000445
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2648,6 +3007,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &362000446
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362000442}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &408369105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,19 +3048,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &408369107
-BoxCollider:
+--- !u!61 &408369107
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408369105}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0599997, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &408369108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3091,6 +3472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 486771124}
   - component: {fileID: 486771125}
+  - component: {fileID: 486771127}
   - component: {fileID: 486771126}
   m_Layer: 8
   m_Name: GroundTemp (15)
@@ -3163,19 +3545,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &486771126
-BoxCollider:
+--- !u!61 &486771126
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486771123}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0.00000020861626, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &486771127
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486771123}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &501316576
 GameObject:
   m_ObjectHideFlags: 0
@@ -3186,6 +3590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 501316578}
   - component: {fileID: 501316577}
+  - component: {fileID: 501316580}
   - component: {fileID: 501316579}
   m_Layer: 8
   m_Name: GroundTemp
@@ -3258,19 +3663,41 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &501316579
-BoxCollider:
+--- !u!61 &501316579
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501316576}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0600004, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &501316580
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501316576}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &508912454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3281,6 +3708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508912455}
   - component: {fileID: 508912456}
+  - component: {fileID: 508912458}
   - component: {fileID: 508912457}
   m_Layer: 8
   m_Name: GroundTemp (17)
@@ -3353,19 +3781,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &508912457
-BoxCollider:
+--- !u!61 &508912457
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508912454}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: -0.00000047683716, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &508912458
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508912454}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &535800687
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,6 +4101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 579501127}
   - component: {fileID: 579501128}
+  - component: {fileID: 579501130}
   - component: {fileID: 579501129}
   m_Layer: 8
   m_Name: GroundTemp (31)
@@ -3723,19 +4174,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &579501129
-BoxCollider:
+--- !u!61 &579501129
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579501126}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &579501130
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579501126}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &615175336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3854,6 +4327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 635894531}
   - component: {fileID: 635894530}
+  - component: {fileID: 635894533}
   - component: {fileID: 635894532}
   m_Layer: 8
   m_Name: GroundTemp (4)
@@ -3926,19 +4400,41 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &635894532
-BoxCollider:
+--- !u!61 &635894532
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635894529}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: -0.0000019073486, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &635894533
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635894529}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &656775178
 GameObject:
   m_ObjectHideFlags: 0
@@ -3949,6 +4445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 656775179}
   - component: {fileID: 656775180}
+  - component: {fileID: 656775182}
   - component: {fileID: 656775181}
   m_Layer: 8
   m_Name: GroundTemp (34)
@@ -4021,19 +4518,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &656775181
-BoxCollider:
+--- !u!61 &656775181
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656775178}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000076293945, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &656775182
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656775178}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &663871793
 GameObject:
   m_ObjectHideFlags: 0
@@ -4044,6 +4563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 663871795}
   - component: {fileID: 663871794}
+  - component: {fileID: 663871797}
   - component: {fileID: 663871796}
   m_Layer: 8
   m_Name: GroundTemp (7)
@@ -4116,19 +4636,41 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &663871796
-BoxCollider:
+--- !u!61 &663871796
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663871793}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0.000015258789, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &663871797
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663871793}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &665125496
 GameObject:
   m_ObjectHideFlags: 0
@@ -4211,19 +4753,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &665125499
-BoxCollider:
+--- !u!61 &665125499
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665125496}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.87, y: 2.99}
+    newSize: {x: 5.87, y: 2.99}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.87, y: 2.9899998, z: 0.2}
-  m_Center: {x: 0.0000076293945, y: 0, z: 0}
+  m_Size: {x: 5.87, y: 2.99}
+  m_EdgeRadius: 0
 --- !u!1 &702819617
 GameObject:
   m_ObjectHideFlags: 0
@@ -4306,19 +4861,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &702819620
-BoxCollider:
+--- !u!61 &702819620
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702819617}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0600004, y: 1.9100007, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!1 &734257881
 GameObject:
   m_ObjectHideFlags: 0
@@ -4329,6 +4897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 734257882}
   - component: {fileID: 734257883}
+  - component: {fileID: 734257885}
   - component: {fileID: 734257884}
   m_Layer: 8
   m_Name: GroundTemp (12)
@@ -4401,19 +4970,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &734257884
-BoxCollider:
+--- !u!61 &734257884
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734257881}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: -0.000015258789, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &734257885
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734257881}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &767952628
 GameObject:
   m_ObjectHideFlags: 0
@@ -4424,6 +5015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 767952630}
   - component: {fileID: 767952629}
+  - component: {fileID: 767952632}
   - component: {fileID: 767952631}
   m_Layer: 8
   m_Name: GroundTemp (8)
@@ -4496,19 +5088,41 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &767952631
-BoxCollider:
+--- !u!61 &767952631
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767952628}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0599997, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &767952632
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767952628}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &804906772
 GameObject:
   m_ObjectHideFlags: 0
@@ -4519,6 +5133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 804906773}
   - component: {fileID: 804906774}
+  - component: {fileID: 804906776}
   - component: {fileID: 804906775}
   m_Layer: 8
   m_Name: GroundTemp (13)
@@ -4591,19 +5206,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &804906775
-BoxCollider:
+--- !u!61 &804906775
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804906772}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0599997, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &804906776
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804906772}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &828933944
 GameObject:
   m_ObjectHideFlags: 0
@@ -4832,6 +5469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 856088217}
   - component: {fileID: 856088218}
+  - component: {fileID: 856088220}
   - component: {fileID: 856088219}
   m_Layer: 8
   m_Name: GroundTemp (25)
@@ -4904,19 +5542,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &856088219
-BoxCollider:
+--- !u!61 &856088219
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856088216}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &856088220
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856088216}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &890724368
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,19 +5659,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &890724371
-BoxCollider:
+--- !u!61 &890724371
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890724368}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.87, y: 2.99}
+    newSize: {x: 5.87, y: 2.99}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.87, y: 2.9900002, z: 0.2}
-  m_Center: {x: -0.0000019073486, y: 0, z: 0}
+  m_Size: {x: 5.87, y: 2.99}
+  m_EdgeRadius: 0
 --- !u!1 &979955110
 GameObject:
   m_ObjectHideFlags: 0
@@ -5022,6 +5695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 979955111}
   - component: {fileID: 979955112}
+  - component: {fileID: 979955114}
   - component: {fileID: 979955113}
   m_Layer: 8
   m_Name: GroundTemp (29)
@@ -5094,19 +5768,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &979955113
-BoxCollider:
+--- !u!61 &979955113
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979955110}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &979955114
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979955110}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &989488827
 GameObject:
   m_ObjectHideFlags: 0
@@ -5117,6 +5813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 989488828}
   - component: {fileID: 989488830}
+  - component: {fileID: 989488831}
   - component: {fileID: 989488829}
   m_Layer: 8
   m_Name: GroundTemp (47)
@@ -5139,19 +5836,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &989488829
-BoxCollider:
+--- !u!61 &989488829
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989488827}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0, y: 0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &989488830
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5202,6 +5912,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &989488831
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989488827}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1001391634
 GameObject:
   m_ObjectHideFlags: 0
@@ -5212,6 +5931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1001391635}
   - component: {fileID: 1001391637}
+  - component: {fileID: 1001391638}
   - component: {fileID: 1001391636}
   m_Layer: 8
   m_Name: GroundTemp (39)
@@ -5234,19 +5954,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1001391636
-BoxCollider:
+--- !u!61 &1001391636
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001391634}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: -0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1001391637
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5297,6 +6030,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1001391638
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001391634}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1029622073
 GameObject:
   m_ObjectHideFlags: 0
@@ -5307,6 +6049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1029622074}
   - component: {fileID: 1029622076}
+  - component: {fileID: 1029622077}
   - component: {fileID: 1029622075}
   m_Layer: 8
   m_Name: GroundTemp (48)
@@ -5329,19 +6072,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1029622075
-BoxCollider:
+--- !u!61 &1029622075
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029622073}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: -0.000015258789, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1029622076
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5392,6 +6148,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1029622077
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029622073}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1030671280
 GameObject:
   m_ObjectHideFlags: 0
@@ -5483,6 +6248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1061263798}
   - component: {fileID: 1061263800}
+  - component: {fileID: 1061263801}
   - component: {fileID: 1061263799}
   m_Layer: 8
   m_Name: GroundTemp (57)
@@ -5505,19 +6271,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1061263799
-BoxCollider:
+--- !u!61 &1061263799
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061263797}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: -0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1061263800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5568,6 +6347,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1061263801
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061263797}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1061671745
 GameObject:
   m_ObjectHideFlags: 0
@@ -5578,6 +6366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1061671746}
   - component: {fileID: 1061671748}
+  - component: {fileID: 1061671749}
   - component: {fileID: 1061671747}
   m_Layer: 8
   m_Name: GroundTemp (67)
@@ -5600,19 +6389,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1061671747
-BoxCollider:
+--- !u!61 &1061671747
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061671745}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1061671748
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5663,6 +6465,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1061671749
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061671745}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1066316984
 GameObject:
   m_ObjectHideFlags: 0
@@ -5673,6 +6484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066316985}
   - component: {fileID: 1066316987}
+  - component: {fileID: 1066316988}
   - component: {fileID: 1066316986}
   m_Layer: 8
   m_Name: GroundTemp (46)
@@ -5695,19 +6507,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1066316986
-BoxCollider:
+--- !u!61 &1066316986
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066316984}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1066316987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5758,6 +6583,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1066316988
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066316984}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1068915190
 GameObject:
   m_ObjectHideFlags: 0
@@ -6025,6 +6859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1116716806}
   - component: {fileID: 1116716807}
+  - component: {fileID: 1116716809}
   - component: {fileID: 1116716808}
   m_Layer: 8
   m_Name: GroundTemp (21)
@@ -6097,19 +6932,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1116716808
-BoxCollider:
+--- !u!61 &1116716808
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116716805}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1116716809
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116716805}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1121922338
 GameObject:
   m_ObjectHideFlags: 0
@@ -6120,6 +6977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1121922339}
   - component: {fileID: 1121922340}
+  - component: {fileID: 1121922342}
   - component: {fileID: 1121922341}
   m_Layer: 8
   m_Name: GroundTemp (18)
@@ -6192,19 +7050,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1121922341
-BoxCollider:
+--- !u!61 &1121922341
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121922338}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1121922342
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121922338}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1160603838
 GameObject:
   m_ObjectHideFlags: 0
@@ -6215,6 +7095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1160603839}
   - component: {fileID: 1160603841}
+  - component: {fileID: 1160603842}
   - component: {fileID: 1160603840}
   m_Layer: 8
   m_Name: GroundTemp (66)
@@ -6237,19 +7118,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1160603840
-BoxCollider:
+--- !u!61 &1160603840
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160603838}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0599997, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1160603841
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6300,6 +7194,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1160603842
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160603838}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1173250773
 GameObject:
   m_ObjectHideFlags: 0
@@ -6431,6 +7334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186355077}
   - component: {fileID: 1186355079}
+  - component: {fileID: 1186355080}
   - component: {fileID: 1186355078}
   m_Layer: 8
   m_Name: GroundTemp (59)
@@ -6453,19 +7357,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1186355078
-BoxCollider:
+--- !u!61 &1186355078
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186355076}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0599997, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1186355079
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6516,6 +7433,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1186355080
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186355076}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1189589685
 GameObject:
   m_ObjectHideFlags: 0
@@ -6526,6 +7452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1189589686}
   - component: {fileID: 1189589687}
+  - component: {fileID: 1189589689}
   - component: {fileID: 1189589688}
   m_Layer: 8
   m_Name: GroundTemp
@@ -6598,19 +7525,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1189589688
-BoxCollider:
+--- !u!61 &1189589688
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189589685}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0.00000047683716, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1189589689
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189589685}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1203497892
 GameObject:
   m_ObjectHideFlags: 0
@@ -6621,6 +7570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1203497893}
   - component: {fileID: 1203497894}
+  - component: {fileID: 1203497896}
   - component: {fileID: 1203497895}
   m_Layer: 8
   m_Name: GroundTemp (19)
@@ -6693,19 +7643,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1203497895
-BoxCollider:
+--- !u!61 &1203497895
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203497892}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1203497896
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203497892}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1203936443
 GameObject:
   m_ObjectHideFlags: 0
@@ -6788,19 +7760,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1203936446
-BoxCollider:
+--- !u!61 &1203936446
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203936443}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!1 &1212330682
 GameObject:
   m_ObjectHideFlags: 0
@@ -6811,6 +7796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212330683}
   - component: {fileID: 1212330685}
+  - component: {fileID: 1212330686}
   - component: {fileID: 1212330684}
   m_Layer: 8
   m_Name: GroundTemp (69)
@@ -6833,19 +7819,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1212330684
-BoxCollider:
+--- !u!61 &1212330684
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212330682}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: -0.000015258789, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1212330685
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6896,6 +7895,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1212330686
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212330682}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1215825798
 GameObject:
   m_ObjectHideFlags: 0
@@ -6906,6 +7914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1215825799}
   - component: {fileID: 1215825800}
+  - component: {fileID: 1215825802}
   - component: {fileID: 1215825801}
   m_Layer: 8
   m_Name: GroundTemp (23)
@@ -6978,19 +7987,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1215825801
-BoxCollider:
+--- !u!61 &1215825801
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215825798}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: -0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1215825802
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215825798}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1228651760
 GameObject:
   m_ObjectHideFlags: 0
@@ -7001,6 +8032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1228651761}
   - component: {fileID: 1228651762}
+  - component: {fileID: 1228651764}
   - component: {fileID: 1228651763}
   m_Layer: 8
   m_Name: GroundTemp (22)
@@ -7073,19 +8105,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1228651763
-BoxCollider:
+--- !u!61 &1228651763
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228651760}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1228651764
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228651760}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1244528724
 GameObject:
   m_ObjectHideFlags: 0
@@ -7096,6 +8150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1244528725}
   - component: {fileID: 1244528726}
+  - component: {fileID: 1244528728}
   - component: {fileID: 1244528727}
   m_Layer: 8
   m_Name: GroundTemp (14)
@@ -7168,19 +8223,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1244528727
-BoxCollider:
+--- !u!61 &1244528727
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244528724}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0599997, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1244528728
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244528724}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1291784643
 GameObject:
   m_ObjectHideFlags: 0
@@ -7466,6 +8543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1306730029}
   - component: {fileID: 1306730031}
+  - component: {fileID: 1306730032}
   - component: {fileID: 1306730030}
   m_Layer: 8
   m_Name: GroundTemp (65)
@@ -7488,19 +8566,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1306730030
-BoxCollider:
+--- !u!61 &1306730030
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306730028}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0.0000076293945, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1306730031
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7551,6 +8642,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1306730032
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306730028}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1320544206
 GameObject:
   m_ObjectHideFlags: 0
@@ -7561,6 +8661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1320544207}
   - component: {fileID: 1320544209}
+  - component: {fileID: 1320544210}
   - component: {fileID: 1320544208}
   m_Layer: 8
   m_Name: GroundTemp (42)
@@ -7583,19 +8684,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1320544208
-BoxCollider:
+--- !u!61 &1320544208
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320544206}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: -0.0000076293945, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1320544209
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7646,6 +8760,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1320544210
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320544206}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1347708547
 GameObject:
   m_ObjectHideFlags: 0
@@ -7656,6 +8779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1347708548}
   - component: {fileID: 1347708549}
+  - component: {fileID: 1347708551}
   - component: {fileID: 1347708550}
   m_Layer: 8
   m_Name: GroundTemp (32)
@@ -7728,19 +8852,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1347708550
-BoxCollider:
+--- !u!61 &1347708550
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347708547}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1347708551
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347708547}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1352931263
 GameObject:
   m_ObjectHideFlags: 0
@@ -7751,6 +8897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1352931264}
   - component: {fileID: 1352931265}
+  - component: {fileID: 1352931267}
   - component: {fileID: 1352931266}
   m_Layer: 8
   m_Name: GroundTemp (11)
@@ -7823,19 +8970,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1352931266
-BoxCollider:
+--- !u!61 &1352931266
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352931263}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0, y: 0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1352931267
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352931263}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1358886056
 GameObject:
   m_ObjectHideFlags: 0
@@ -7846,6 +9015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1358886057}
   - component: {fileID: 1358886059}
+  - component: {fileID: 1358886060}
   - component: {fileID: 1358886058}
   m_Layer: 8
   m_Name: GroundTemp (53)
@@ -7868,19 +9038,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1358886058
-BoxCollider:
+--- !u!61 &1358886058
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358886056}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1358886059
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7931,6 +9114,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1358886060
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358886056}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1360801160
 GameObject:
   m_ObjectHideFlags: 0
@@ -8053,6 +9245,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1364417863}
   - component: {fileID: 1364417865}
+  - component: {fileID: 1364417867}
+  - component: {fileID: 1364417866}
   - component: {fileID: 1364417864}
   m_Layer: 8
   m_Name: GroundTemp (68)
@@ -8075,19 +9269,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1364417864
-BoxCollider:
+--- !u!61 &1364417864
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1364417862}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0, y: 0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1364417865
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8138,6 +9345,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1364417866
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364417862}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1364417867
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364417862}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1372386494
 GameObject:
   m_ObjectHideFlags: 0
@@ -8148,6 +9390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1372386495}
   - component: {fileID: 1372386496}
+  - component: {fileID: 1372386498}
   - component: {fileID: 1372386497}
   m_Layer: 8
   m_Name: GroundTemp (28)
@@ -8220,19 +9463,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1372386497
-BoxCollider:
+--- !u!61 &1372386497
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372386494}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: -0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1372386498
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372386494}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1375421088
 GameObject:
   m_ObjectHideFlags: 0
@@ -8243,6 +9508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1375421089}
   - component: {fileID: 1375421091}
+  - component: {fileID: 1375421092}
   - component: {fileID: 1375421090}
   m_Layer: 8
   m_Name: GroundTemp (56)
@@ -8265,19 +9531,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1375421090
-BoxCollider:
+--- !u!61 &1375421090
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375421088}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1375421091
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8328,6 +9607,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1375421092
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375421088}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1395788364
 GameObject:
   m_ObjectHideFlags: 0
@@ -8338,6 +9626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1395788366}
   - component: {fileID: 1395788365}
+  - component: {fileID: 1395788368}
   - component: {fileID: 1395788367}
   m_Layer: 8
   m_Name: GroundTemp (1)
@@ -8410,19 +9699,41 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1395788367
-BoxCollider:
+--- !u!61 &1395788367
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395788364}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0.0000076293945, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1395788368
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395788364}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1410751782
 GameObject:
   m_ObjectHideFlags: 0
@@ -8433,6 +9744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1410751783}
   - component: {fileID: 1410751785}
+  - component: {fileID: 1410751786}
   - component: {fileID: 1410751784}
   m_Layer: 8
   m_Name: GroundTemp (44)
@@ -8455,19 +9767,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1410751784
-BoxCollider:
+--- !u!61 &1410751784
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410751782}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1410751785
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8518,6 +9843,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1410751786
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410751782}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1428886296
 GameObject:
   m_ObjectHideFlags: 0
@@ -8528,6 +9862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428886297}
   - component: {fileID: 1428886299}
+  - component: {fileID: 1428886300}
   - component: {fileID: 1428886298}
   m_Layer: 8
   m_Name: GroundTemp (41)
@@ -8550,19 +9885,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1428886298
-BoxCollider:
+--- !u!61 &1428886298
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428886296}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1428886299
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8613,6 +9961,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1428886300
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428886296}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1458888681
 GameObject:
   m_ObjectHideFlags: 0
@@ -8793,6 +10150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1475148951}
   - component: {fileID: 1475148952}
+  - component: {fileID: 1475148954}
   - component: {fileID: 1475148953}
   m_Layer: 8
   m_Name: GroundTemp (35)
@@ -8865,19 +10223,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1475148953
-BoxCollider:
+--- !u!61 &1475148953
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475148950}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: -0.0000076293945, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1475148954
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475148950}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1487648843
 GameObject:
   m_ObjectHideFlags: 0
@@ -8888,6 +10268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1487648844}
   - component: {fileID: 1487648845}
+  - component: {fileID: 1487648847}
   - component: {fileID: 1487648846}
   m_Layer: 8
   m_Name: GroundTemp (30)
@@ -8960,19 +10341,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1487648846
-BoxCollider:
+--- !u!61 &1487648846
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487648843}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1487648847
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487648843}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1491798986
 GameObject:
   m_ObjectHideFlags: 0
@@ -8983,6 +10386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1491798987}
   - component: {fileID: 1491798988}
+  - component: {fileID: 1491798990}
   - component: {fileID: 1491798989}
   m_Layer: 8
   m_Name: GroundTemp (1)
@@ -9055,19 +10459,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1491798989
-BoxCollider:
+--- !u!61 &1491798989
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491798986}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1491798990
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491798986}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1506990489
 GameObject:
   m_ObjectHideFlags: 0
@@ -9254,6 +10680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575048589}
   - component: {fileID: 1575048588}
+  - component: {fileID: 1575048591}
   - component: {fileID: 1575048590}
   m_Layer: 8
   m_Name: GroundTemp (9)
@@ -9326,19 +10753,41 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1575048590
-BoxCollider:
+--- !u!61 &1575048590
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575048587}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0599997, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1575048591
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575048587}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1590304350
 GameObject:
   m_ObjectHideFlags: 0
@@ -9349,6 +10798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1590304351}
   - component: {fileID: 1590304352}
+  - component: {fileID: 1590304354}
   - component: {fileID: 1590304353}
   m_Layer: 8
   m_Name: GroundTemp (10)
@@ -9421,19 +10871,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1590304353
-BoxCollider:
+--- !u!61 &1590304353
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590304350}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1590304354
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590304350}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1648082379
 GameObject:
   m_ObjectHideFlags: 0
@@ -9525,6 +10997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1659976949}
   - component: {fileID: 1659976951}
+  - component: {fileID: 1659976952}
   - component: {fileID: 1659976950}
   m_Layer: 8
   m_Name: GroundTemp (51)
@@ -9547,19 +11020,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1659976950
-BoxCollider:
+--- !u!61 &1659976950
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659976948}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: -0.000015258789, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1659976951
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9610,6 +11096,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1659976952
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659976948}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1683182216
 GameObject:
   m_ObjectHideFlags: 0
@@ -9620,6 +11115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1683182217}
   - component: {fileID: 1683182218}
+  - component: {fileID: 1683182220}
   - component: {fileID: 1683182219}
   m_Layer: 8
   m_Name: GroundTemp (3)
@@ -9692,19 +11188,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1683182219
-BoxCollider:
+--- !u!61 &1683182219
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683182216}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: -0.0000076293945, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1683182220
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683182216}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1697526608
 GameObject:
   m_ObjectHideFlags: 0
@@ -9823,6 +11341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1713630641}
   - component: {fileID: 1713630643}
+  - component: {fileID: 1713630644}
   - component: {fileID: 1713630642}
   m_Layer: 8
   m_Name: GroundTemp (49)
@@ -9845,19 +11364,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1713630642
-BoxCollider:
+--- !u!61 &1713630642
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713630640}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9100002, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1713630643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9908,6 +11440,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1713630644
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713630640}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1737010187
 GameObject:
   m_ObjectHideFlags: 0
@@ -9952,6 +11493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1749434664}
   - component: {fileID: 1749434666}
+  - component: {fileID: 1749434667}
   - component: {fileID: 1749434665}
   m_Layer: 8
   m_Name: GroundTemp (62)
@@ -9974,19 +11516,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1749434665
-BoxCollider:
+--- !u!61 &1749434665
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749434663}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0.0000076293945, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1749434666
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10037,6 +11592,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1749434667
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749434663}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1764559410
 GameObject:
   m_ObjectHideFlags: 0
@@ -10196,6 +11760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1770394610}
   - component: {fileID: 1770394611}
+  - component: {fileID: 1770394613}
   - component: {fileID: 1770394612}
   m_Layer: 8
   m_Name: GroundTemp (27)
@@ -10268,19 +11833,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1770394612
-BoxCollider:
+--- !u!61 &1770394612
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770394609}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: -0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1770394613
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770394609}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1804327067
 GameObject:
   m_ObjectHideFlags: 0
@@ -10291,6 +11878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1804327068}
   - component: {fileID: 1804327070}
+  - component: {fileID: 1804327071}
   - component: {fileID: 1804327069}
   m_Layer: 8
   m_Name: GroundTemp (60)
@@ -10313,19 +11901,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1804327069
-BoxCollider:
+--- !u!61 &1804327069
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804327067}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1804327070
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10376,6 +11977,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1804327071
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804327067}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1806027321
 GameObject:
   m_ObjectHideFlags: 0
@@ -10417,6 +12027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1855235763}
   - component: {fileID: 1855235765}
+  - component: {fileID: 1855235766}
   - component: {fileID: 1855235764}
   m_Layer: 8
   m_Name: GroundTemp (58)
@@ -10439,19 +12050,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1855235764
-BoxCollider:
+--- !u!61 &1855235764
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855235762}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1855235765
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10502,6 +12126,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1855235766
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855235762}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1898339595
 GameObject:
   m_ObjectHideFlags: 0
@@ -10512,6 +12145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1898339596}
   - component: {fileID: 1898339598}
+  - component: {fileID: 1898339599}
   - component: {fileID: 1898339597}
   m_Layer: 8
   m_Name: GroundTemp (63)
@@ -10534,19 +12168,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1898339597
-BoxCollider:
+--- !u!61 &1898339597
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898339595}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0599997, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &1898339598
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10597,6 +12244,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &1898339599
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898339595}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1994671778
 GameObject:
   m_ObjectHideFlags: 0
@@ -10679,19 +12335,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1994671781
-BoxCollider:
+--- !u!61 &1994671781
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994671778}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0599997, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000009536743, y: 0.0000002682209, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!1 &1999934127
 GameObject:
   m_ObjectHideFlags: 0
@@ -10702,6 +12371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1999934128}
   - component: {fileID: 1999934129}
+  - component: {fileID: 1999934131}
   - component: {fileID: 1999934130}
   m_Layer: 8
   m_Name: GroundTemp (2)
@@ -10774,19 +12444,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1999934130
-BoxCollider:
+--- !u!61 &1999934130
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999934127}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &1999934131
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999934127}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &2089561296
 GameObject:
   m_ObjectHideFlags: 0
@@ -10797,6 +12489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2089561298}
   - component: {fileID: 2089561297}
+  - component: {fileID: 2089561300}
   - component: {fileID: 2089561299}
   m_Layer: 8
   m_Name: GroundTemp (2)
@@ -10869,19 +12562,41 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2089561299
-BoxCollider:
+--- !u!61 &2089561299
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089561296}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0599997, y: 1.9099998, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &2089561300
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089561296}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &2108462885
 GameObject:
   m_ObjectHideFlags: 0
@@ -11041,6 +12756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2118593208}
   - component: {fileID: 2118593209}
+  - component: {fileID: 2118593211}
   - component: {fileID: 2118593210}
   m_Layer: 8
   m_Name: GroundTemp (24)
@@ -11113,19 +12829,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &2118593210
-BoxCollider:
+--- !u!61 &2118593210
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118593207}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: 0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
+--- !u!45 &2118593211
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118593207}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &2128459316
 GameObject:
   m_ObjectHideFlags: 0
@@ -11217,6 +12955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132958942}
   - component: {fileID: 2132958944}
+  - component: {fileID: 2132958945}
   - component: {fileID: 2132958943}
   m_Layer: 8
   m_Name: GroundTemp (40)
@@ -11239,19 +12978,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2132958943
-BoxCollider:
+--- !u!61 &2132958943
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132958941}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000038146973, y: -0.0000038146973, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &2132958944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11302,6 +13054,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &2132958945
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132958941}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &2134137683
 GameObject:
   m_ObjectHideFlags: 0
@@ -11312,6 +13073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2134137684}
   - component: {fileID: 2134137686}
+  - component: {fileID: 2134137687}
   - component: {fileID: 2134137685}
   m_Layer: 8
   m_Name: GroundTemp (54)
@@ -11334,19 +13096,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2134137685
-BoxCollider:
+--- !u!61 &2134137685
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134137683}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0.0000076293945, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &2134137686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11397,6 +13172,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &2134137687
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134137683}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &2141474870
 GameObject:
   m_ObjectHideFlags: 0
@@ -11407,6 +13191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2141474871}
   - component: {fileID: 2141474873}
+  - component: {fileID: 2141474874}
   - component: {fileID: 2141474872}
   m_Layer: 8
   m_Name: GroundTemp (45)
@@ -11429,19 +13214,32 @@ Transform:
   m_Father: {fileID: 1305451871}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2141474872
-BoxCollider:
+--- !u!61 &2141474872
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141474870}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.06, y: 1.91}
+    newSize: {x: 3.06, y: 1.91}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.06, y: 1.91, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.06, y: 1.91}
+  m_EdgeRadius: 0
 --- !u!212 &2141474873
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11492,3 +13290,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!45 &2141474874
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141474870}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}

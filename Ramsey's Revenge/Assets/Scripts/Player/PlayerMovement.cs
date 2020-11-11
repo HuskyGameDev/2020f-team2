@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask platformsLayerMask;
     private Rigidbody2D rigidbody2d;
     private BoxCollider2D boxCollider2d;
+    public GameObject child;
     public float moveSpeed = 80f;
     public float jumpVelocity = 200f;
     private float movement;
@@ -51,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = left;
             }
             direction = 1;
+            child.transform.localPosition = new Vector3(-10f, child.transform.localPosition.y);
         }
         else if (Input.GetKey(KeyCode.D))
         {
@@ -65,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = right;
             }
             direction = 0;
+            child.transform.localPosition = new Vector3(10f, child.transform.localPosition.y);
         }
 
         if (Input.GetKeyUp(KeyCode.A))
@@ -82,12 +85,15 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Jump Code
-        if (IsGrounded() && Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && IsGrounded())
         {
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, Vector2.up.y * jumpVelocity);
             //this.gameObject.GetComponent<Transform>().localRotation = new Quaternion(0f, 0f, 0f, 0f);
-            
-            
+        }
+
+        if (Input.GetKeyUp(KeyCode.W) && rigidbody2d.velocity.y > 0)
+        {
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * .5f);
         }
 
         if (Input.GetKey(KeyCode.W))

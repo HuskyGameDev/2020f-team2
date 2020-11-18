@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public Sprite left;
     public Sprite right;
     private int direction = 0;
+    public bool doubleJump;
+    private bool canDoubleJump;
 
     private void Start()
     {
@@ -32,11 +34,19 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded())
         {
             rigidbody2d.gravityScale = 0f;
-            rigidbody2d.velocity = new Vector2(0f, 0f);
+            rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
         }
         else
         {
             rigidbody2d.gravityScale = gravity;
+        }
+
+        if (doubleJump)
+        {
+            if (IsGrounded())
+            {
+                canDoubleJump = true;
+            }
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -85,19 +95,21 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Jump Code
-        if (Input.GetKey(KeyCode.W) && IsGrounded())
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, Vector2.up.y * jumpVelocity);
-            //this.gameObject.GetComponent<Transform>().localRotation = new Quaternion(0f, 0f, 0f, 0f);
-        }
+            if (IsGrounded())
+            {
+                rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, Vector2.up.y * jumpVelocity);
+            }
+            else
+            {
+                if (canDoubleJump)
+                {
+                    rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, Vector2.up.y * jumpVelocity);
+                    canDoubleJump = false;
+                }
+            }
 
-        if (Input.GetKeyUp(KeyCode.W) && rigidbody2d.velocity.y > 0)
-        {
-            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * .5f);
-        }
-
-        if (Input.GetKey(KeyCode.W))
-        {
             this.gameObject.GetComponent<Animator>().enabled = true;
             if (direction == 1)
             {
@@ -111,6 +123,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.W))
         {
+            if (rigidbody2d.velocity.y > 0)
+            {
+                rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * .5f);
+            }
+
             this.gameObject.GetComponent<Animator>().enabled = false;
             if (direction == 1)
             {

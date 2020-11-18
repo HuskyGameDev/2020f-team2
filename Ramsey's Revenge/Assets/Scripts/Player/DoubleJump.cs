@@ -10,5 +10,6 @@ public class DoubleJump : MonoBehaviour
     {
         player.doubleJump = true;
         this.GetComponent<SpriteRenderer>().enabled = false;
+        this.GetComponent<BoxCollider2D>().enabled = false;
     }
 }

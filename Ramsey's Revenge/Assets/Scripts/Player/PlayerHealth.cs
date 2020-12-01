@@ -24,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
     //can be called by enemies
-    public void playerTakesDamage(int damage)
+    public void takeDamage(int damage)
     {
         health -= damage;
         if (health <= 0)

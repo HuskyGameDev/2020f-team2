@@ -31,10 +31,11 @@ public class PlayerMovement : MonoBehaviour
         // Move Code
         movement = Input.GetAxis("Horizontal");
 
+        // To stop sliding on hills
         if (IsGrounded())
         {
             rigidbody2d.gravityScale = 0f;
-            rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x/2, rigidbody2d.velocity.y);
         }
         else
         {

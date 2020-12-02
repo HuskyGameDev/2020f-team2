@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     private int damage = 25;
     private PlayerHealth player;
     private bool attacking = false;
+    private Vector3 lastLocation;
 
     private void Start()
     {
@@ -22,6 +23,14 @@ public class Enemy : MonoBehaviour
         {
             attacking = true;
             StartCoroutine(attackPlayer());
+        }
+
+        if(distanceToPlayer < 300)
+        {
+            lastLocation = gameObject.transform.position;
+        } else
+        {
+            gameObject.transform.position = lastLocation;
         }
     }
 

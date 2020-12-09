@@ -25,7 +25,7 @@ public class PlayerAttacking : MonoBehaviour
             attacking = true;
             attackTimer = attackCd;
 
-            rigidbody2d.velocity = new Vector2((rigidbody2d.velocity.x+1f) * 1000f, rigidbody2d.velocity.y);
+            rigidbody2d.velocity = new Vector2((rigidbody2d.velocity.x + 1f) * 1000f, rigidbody2d.velocity.y);
 
             attackTrigger.enabled = true;
         }

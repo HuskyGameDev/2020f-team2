@@ -13,3 +13,4 @@ public class DoubleJump : MonoBehaviour
         this.GetComponent<BoxCollider2D>().enabled = false;
     }
 }
+

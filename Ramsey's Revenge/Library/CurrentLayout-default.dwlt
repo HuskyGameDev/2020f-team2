@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 131
+  controlID: 129
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,20 +338,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Environment Sprites
+    - Assets/Sprites/Ramsey Movement Sprites
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Environment Sprites
+  - Assets/Sprites/Ramsey Movement Sprites
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Nicole\Documents\GitHub\2020f-team2\Ramsey's Revenge
+  m_LastProjectPath: C:\Users\noahc\OneDrive\Documents\GitHub\2020f-team2\Ramsey's
+    Revenge
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 823b0000
-    m_LastClickedID: 15234
-    m_ExpandedIDs: 000000007a3b0000803b0000
+    m_SelectedIDs: 883b0000
+    m_LastClickedID: 15240
+    m_ExpandedIDs: 00000000883b00008e3b00009a3b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +380,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007a3b0000
+    m_ExpandedIDs: 00000000883b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -406,7 +407,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -502,9 +503,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 40fbffff
+      m_SelectedIDs: 12390000
+      m_LastClickedID: 14610
+      m_ExpandedIDs: 08fbffff16390000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +565,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1324.9004, y: 465.13953, z: -448.55118}
+    m_Target: {x: 1187.198, y: 465.7134, z: -290.25}
     speed: 2
-    m_Value: {x: 1328.0818, y: 441.18588, z: -443.57782}
+    m_Value: {x: 1187.198, y: 465.7134, z: -290.25}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -616,9 +617,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1155.9705
+    m_Target: 1541.8436
     speed: 2
-    m_Value: 1106.1918
+    m_Value: 1475.4485
   m_Ortho:
     m_Target: 1
     speed: 2

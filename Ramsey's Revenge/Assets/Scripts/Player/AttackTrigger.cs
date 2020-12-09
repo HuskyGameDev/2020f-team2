@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class AttackTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int dmg = 50;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        
+        if(col.isTrigger != true && col.CompareTag("Enemy"))
+        {
+            Debug.Log("collision");
+            col.SendMessageUpwards("takeDamage", dmg);
+        }
     }
 }

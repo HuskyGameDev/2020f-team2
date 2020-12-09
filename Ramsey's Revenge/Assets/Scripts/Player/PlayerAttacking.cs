@@ -7,7 +7,7 @@ public class PlayerAttacking : MonoBehaviour
     private bool attacking = false;
 
     private float attackTimer = 0f;
-    private float attackCd = 0.3f;
+    private float attackCd = 0.5f;
 
     public Collider2D attackTrigger;
     private Rigidbody2D rigidbody2d;
@@ -25,8 +25,6 @@ public class PlayerAttacking : MonoBehaviour
             attacking = true;
             attackTimer = attackCd;
 
-            rigidbody2d.velocity = new Vector2((rigidbody2d.velocity.x+1f) * 1000f, rigidbody2d.velocity.y);
-
             attackTrigger.enabled = true;
         }
 
@@ -40,7 +38,7 @@ public class PlayerAttacking : MonoBehaviour
             {
                 attacking = false;
                 attackTrigger.enabled = false;
-                rigidbody2d.velocity = Vector2.right * 0f;
+                this.GetComponentInParent<Animator>().Play("Idle");
             }
         }
     }

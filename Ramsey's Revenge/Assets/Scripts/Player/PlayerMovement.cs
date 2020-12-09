@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded())
         {
             rigidbody2d.gravityScale = 0f;
-            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x/2, rigidbody2d.velocity.y);
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x / 2, rigidbody2d.velocity.y);
         }
         else
         {

@@ -29,11 +29,11 @@ public class CameraFollow : MonoBehaviour
         float yDifference = Vector2.Distance(Vector2.up * transform.position.y, Vector2.up * follow.y);
 
         Vector3 newPosition = transform.position;
-        if(Mathf.Abs(xDifference) >= threshold.x)
+        if (Mathf.Abs(xDifference) >= threshold.x)
         {
             newPosition.x = follow.x;
         }
-        if(Mathf.Abs(yDifference) >= threshold.y)
+        if (Mathf.Abs(yDifference) >= threshold.y)
         {
             newPosition.y = follow.y;
         }

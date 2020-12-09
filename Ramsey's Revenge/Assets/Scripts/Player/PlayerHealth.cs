@@ -6,6 +6,8 @@ public class PlayerHealth : MonoBehaviour
 {
 
     public int health;
+    private bool ram = false;
+    public Collider2D col;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +28,11 @@ public class PlayerHealth : MonoBehaviour
     //can be called by enemies
     public void playerTakesDamage(int damage)
     {
-        health -= damage;
+        if (!col.enabled)
+        {
+            health -= damage;
+            this.gameObject.GetComponent<Animator>().Play("DamageTaken");
+        }
         if (health <= 0)
         {
             Destroy(gameObject);

@@ -7,16 +7,16 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask platformsLayerMask;
     private Rigidbody2D rigidbody2d;
     private BoxCollider2D boxCollider2d;
-    public GameObject child;
     public float moveSpeed = 80f;
     public float jumpVelocity = 200f;
     private float movement;
     private float gravity;
     public Sprite left;
     public Sprite right;
-    private int direction = 0;
+    private bool facingRight = true;
     public bool doubleJump;
     private bool canDoubleJump;
+    private bool ram = false;
 
     private void Start()
     {
@@ -28,14 +28,14 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        // Move Code
+
         movement = Input.GetAxis("Horizontal");
 
         // To stop sliding on hills
         if (IsGrounded())
         {
             rigidbody2d.gravityScale = 0f;
-            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x/2, rigidbody2d.velocity.y);
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x / 2f, rigidbody2d.velocity.y);
         }
         else
         {
@@ -50,49 +50,65 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        // Attack move code
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (!ram)
+            {
+                this.gameObject.GetComponent<Animator>().Play("Ram");
+                ram = true;
+                StartCoroutine(Ram());
+            }
+        }
+
+        // Move Code
         if (Input.GetKey(KeyCode.A))
         {
             rigidbody2d.velocity = new Vector2(Vector2.left.x * moveSpeed, rigidbody2d.velocity.y);
+
+            if (facingRight)
+            {
+                Flip();
+            }
+
             if (IsGrounded())
             {
-                this.gameObject.GetComponent<Animator>().enabled = true;
-                this.gameObject.GetComponent<Animator>().Play("MoveLeft");
-            }
-            else
-            {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = left;
-            }
-            direction = 1;
-            child.transform.localPosition = new Vector3(-10f, child.transform.localPosition.y);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            rigidbody2d.velocity = new Vector2(Vector2.right.x * moveSpeed, rigidbody2d.velocity.y);
-            if (IsGrounded())
-            {
-                this.gameObject.GetComponent<Animator>().enabled = true;
                 this.gameObject.GetComponent<Animator>().Play("MoveRight");
             }
             else
             {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = right;
+                this.gameObject.GetComponent<Animator>().Play("Idle");
             }
-            direction = 0;
-            child.transform.localPosition = new Vector3(10f, child.transform.localPosition.y);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            rigidbody2d.velocity = new Vector2(Vector2.right.x * moveSpeed, rigidbody2d.velocity.y);
+
+            if (!facingRight)
+            {
+                Flip();
+            }
+
+            if (IsGrounded())
+            {
+                this.gameObject.GetComponent<Animator>().Play("MoveRight");
+            }
+            else
+            {
+                this.gameObject.GetComponent<Animator>().Play("Idle");
+            }
         }
 
         if (Input.GetKeyUp(KeyCode.A))
         {
             rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
-            this.gameObject.GetComponent<Animator>().enabled = false;
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = left;
+            this.gameObject.GetComponent<Animator>().Play("Idle");
         }
 
         if (Input.GetKeyUp(KeyCode.D))
         {
             rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
-            this.gameObject.GetComponent<Animator>().enabled = false;
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = right;
+            this.gameObject.GetComponent<Animator>().Play("Idle");
         }
 
         // Jump Code
@@ -111,15 +127,7 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
 
-            this.gameObject.GetComponent<Animator>().enabled = true;
-            if (direction == 1)
-            {
-                this.gameObject.GetComponent<Animator>().Play("JumpLeft");
-            }
-            else if (direction == 0)
-            {
-                this.gameObject.GetComponent<Animator>().Play("JumpRight");
-            }
+            this.gameObject.GetComponent<Animator>().Play("JumpRight");
         }
 
         if (Input.GetKeyUp(KeyCode.W))
@@ -129,16 +137,38 @@ public class PlayerMovement : MonoBehaviour
                 rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * .5f);
             }
 
-            this.gameObject.GetComponent<Animator>().enabled = false;
-            if (direction == 1)
+            if (!facingRight)
             {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = left;
+                this.gameObject.GetComponent<Animator>().Play("Idle");
             }
-            else if (direction == 0)
+            else if (facingRight)
             {
-                this.gameObject.GetComponent<SpriteRenderer>().sprite = right;
+                this.gameObject.GetComponent<Animator>().Play("Idle");
             }
         }
+    }
+
+    private void Flip()
+    {
+        facingRight = !facingRight;
+
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
+
+    private IEnumerator Ram()
+    {
+        if (facingRight)
+        {
+            rigidbody2d.velocity = new Vector2(Vector2.right.x * moveSpeed * 2, rigidbody2d.velocity.y);
+        }
+        else if (!facingRight)
+        {
+            rigidbody2d.velocity = new Vector2(Vector2.left.x * moveSpeed * 2, rigidbody2d.velocity.y);
+        }
+        yield return new WaitForSeconds(0.5f);
+        ram = false;
     }
 
     private bool IsGrounded()

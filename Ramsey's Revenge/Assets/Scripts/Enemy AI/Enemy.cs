@@ -46,6 +46,8 @@ public class Enemy : MonoBehaviour
     public void takeDamage(int damageTaken)
     {
         health -= damageTaken;
+        this.gameObject.GetComponent<Animator>().Play("DamageTaken");
+        Debug.Log("hello");
         if (health <= 0)
             Destroy(gameObject);
     }

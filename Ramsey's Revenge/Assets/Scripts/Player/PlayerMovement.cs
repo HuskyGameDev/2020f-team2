@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public LayerMask platformsLayerMask;
     private Rigidbody2D rigidbody2d;
-    private BoxCollider2D boxCollider2d;
+    public BoxCollider2D boxCollider2d;
     public float moveSpeed = 80f;
     public float jumpVelocity = 200f;
     private float movement;
@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
-        boxCollider2d = transform.GetComponent<BoxCollider2D>();
         gravity = rigidbody2d.gravityScale;
     }
 
@@ -32,15 +31,15 @@ public class PlayerMovement : MonoBehaviour
         movement = Input.GetAxis("Horizontal");
 
         // To stop sliding on hills
-        if (IsGrounded())
-        {
-            rigidbody2d.gravityScale = 0f;
-            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x / 2f, rigidbody2d.velocity.y);
-        }
-        else
-        {
-            rigidbody2d.gravityScale = gravity;
-        }
+        //if (IsGrounded())
+        //{
+        //    rigidbody2d.gravityScale = 0f;
+        //    rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x / 2f, rigidbody2d.velocity.y);
+        //}
+        //else
+        //{
+        //    rigidbody2d.gravityScale = gravity;
+        //}
 
         if (doubleJump)
         {
@@ -137,14 +136,7 @@ public class PlayerMovement : MonoBehaviour
                 rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * .5f);
             }
 
-            if (!facingRight)
-            {
-                this.gameObject.GetComponent<Animator>().Play("Idle");
-            }
-            else if (facingRight)
-            {
-                this.gameObject.GetComponent<Animator>().Play("Idle");
-            }
+            this.gameObject.GetComponent<Animator>().Play("Idle");
         }
     }
 
@@ -168,6 +160,7 @@ public class PlayerMovement : MonoBehaviour
             rigidbody2d.velocity = new Vector2(Vector2.left.x * moveSpeed * 2, rigidbody2d.velocity.y);
         }
         yield return new WaitForSeconds(0.5f);
+        rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
         ram = false;
     }
 

@@ -38,7 +38,7 @@ public class PlayerAttacking : MonoBehaviour
             {
                 attacking = false;
                 attackTrigger.enabled = false;
-                this.GetComponentInParent<Animator>().Play("Idle");
+                this.GetComponent<Animator>().Play("Idle");
             }
         }
     }

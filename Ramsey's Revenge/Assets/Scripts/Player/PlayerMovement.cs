@@ -151,6 +151,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator Ram()
     {
+        
         if (facingRight)
         {
             rigidbody2d.velocity = new Vector2(Vector2.right.x * moveSpeed * 2, rigidbody2d.velocity.y);

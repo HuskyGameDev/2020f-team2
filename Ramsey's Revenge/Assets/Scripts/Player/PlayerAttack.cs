@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAttacking : MonoBehaviour
+public class PlayerAttack : MonoBehaviour
 {
     private bool attacking = false;
 
@@ -10,7 +10,7 @@ public class PlayerAttacking : MonoBehaviour
     private float attackCd = 0.5f;
 
     public Collider2D attackTrigger;
-    private Rigidbody2D rigidbody2d;
+    private Rigidbody2D rigidbody2d; // Rigidbody of Ramsey
 
     private void Awake()
     {
@@ -20,7 +20,9 @@ public class PlayerAttacking : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !attacking)
+
+        // Sets an attack cooldown so you can't spam the attack button
+        if (Input.GetKeyDown(KeyCode.Space) && !attacking) // Attack button
         {
             attacking = true;
             attackTimer = attackCd;

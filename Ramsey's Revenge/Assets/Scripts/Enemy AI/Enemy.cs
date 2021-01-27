@@ -7,13 +7,13 @@ public class Enemy : MonoBehaviour
 {
     private int health = 100;
     private int damage = 25;
-    private PlayerHealth player;
+    public GameObject player;
     private bool attacking = false;
     private Vector3 lastLocation;
 
     private void Start()
     {
-        player = FindObjectOfType<PlayerHealth>();
+        //player = FindObjectOfType<PlayerHealth>();
     }
 
     private void Update()
@@ -22,7 +22,8 @@ public class Enemy : MonoBehaviour
         if (distanceToPlayer < 25 && !attacking)
         {
             attacking = true;
-            StartCoroutine(attackPlayer());
+            Debug.Log("Enemy attack");
+            StartCoroutine(AttackPlayer());
         }
 
         if(distanceToPlayer < 300)
@@ -34,16 +35,16 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private IEnumerator attackPlayer()
+    private IEnumerator AttackPlayer()
     {
         //will play the animation and damage player
         //gameObject.GetComponent<Animator>().Play("Attack");
-        player.playerTakesDamage(damage);
+        player.GetComponent<PlayerHealth>().SendMessage("PlayerTakesDamage", damage);
         yield return new WaitForSeconds(3f);
         attacking = false;
     }
 
-    public void takeDamage(int damageTaken)
+    public void TakeDamage(int damageTaken)
     {
         health -= damageTaken;
         this.gameObject.GetComponent<Animator>().Play("DamageTaken");

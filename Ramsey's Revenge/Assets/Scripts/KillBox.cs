@@ -8,7 +8,7 @@ public class KillBox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.transform.position = new Vector3(-155, 31, 0);
+        collision.gameObject.GetComponentInParent<PlayerHealth>().health = 0;
         //mainCamera.transform.position = new Vector3(-90, 103, -1);
     }
 }

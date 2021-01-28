@@ -18,9 +18,15 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         //checks for death
+        //if (health <= 0)
+        //{
+        //    Destroy(gameObject);
+        //}
         if (health <= 0)
         {
-            Destroy(gameObject);
+            gameObject.transform.position = new Vector3(-155, 40, 0);
+            Debug.Log("You died!!");
+            health = 100;
         }
     }
 
@@ -29,11 +35,5 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= damage;
         this.gameObject.GetComponent<Animator>().Play("DamageTaken");
-        if (health <= 0)
-        {
-            gameObject.transform.position = new Vector3(-155, 31, 0);
-            Debug.Log("You died!!");
-            health = 100;
-        }
     }
 }

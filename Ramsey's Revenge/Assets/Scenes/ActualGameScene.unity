@@ -724,7 +724,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -1794,7 +1794,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -3217,7 +3217,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -3368,7 +3368,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -5043,7 +5043,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -5594,7 +5594,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -6016,7 +6016,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -6567,7 +6567,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -8193,7 +8193,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -8919,7 +8919,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -11443,7 +11443,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -14791,7 +14791,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -15870,7 +15870,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -17080,7 +17080,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30
@@ -18306,7 +18306,7 @@ MonoBehaviour:
   version: 2
   radius: 0.78
   height: 10
-  repathRate: 0.5
+  repathRate: 0.1
   canSearch: 1
   canMove: 1
   maxSpeed: 30

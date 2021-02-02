@@ -29,12 +29,12 @@ public class Enemy : MonoBehaviour
 
         if(distanceToPlayer < 300)
         {
-            //gameObject.SetActive(true);
+            this.gameObject.GetComponent<Pathfinding.AIPath>().canSearch = true;
             lastLocation = gameObject.transform.position;
         } else
         {
             gameObject.transform.position = lastLocation;
-            //gameObject.SetActive(false);
+            this.gameObject.GetComponent<Pathfinding.AIPath>().canSearch = false;
         }
     }
 

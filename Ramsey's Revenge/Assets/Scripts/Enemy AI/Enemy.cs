@@ -10,11 +10,15 @@ public class Enemy : MonoBehaviour
     public GameObject player;
     private bool attacking = false;
     private Vector3 lastLocation;
+    private Rigidbody2D play;
+    private SpriteRenderer sprite;
 
     private void Start()
     {
         //player = FindObjectOfType<PlayerHealth>();
         lastLocation = gameObject.transform.position;
+        play = FindObjectOfType<Rigidbody2D>();
+        sprite = GameObject.FindGameObjectWithTag("Enemy").GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -35,6 +39,14 @@ public class Enemy : MonoBehaviour
         {
             gameObject.transform.position = lastLocation;
             this.gameObject.GetComponent<Pathfinding.AIPath>().canSearch = false;
+        }
+        if (player.transform.position.x > transform.position.x)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
     }
 

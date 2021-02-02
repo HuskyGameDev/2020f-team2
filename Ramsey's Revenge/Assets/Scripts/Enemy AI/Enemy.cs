@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         //player = FindObjectOfType<PlayerHealth>();
+        lastLocation = gameObject.transform.position;
     }
 
     private void Update()
@@ -28,10 +29,12 @@ public class Enemy : MonoBehaviour
 
         if(distanceToPlayer < 300)
         {
+            //gameObject.SetActive(true);
             lastLocation = gameObject.transform.position;
         } else
         {
             gameObject.transform.position = lastLocation;
+            //gameObject.SetActive(false);
         }
     }
 

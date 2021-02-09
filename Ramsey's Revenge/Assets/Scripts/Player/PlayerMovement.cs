@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public bool doubleJump;
     private bool canDoubleJump;
     private bool ram = false;
+    private bool canMove = true;
 
     private void Start()
     {
@@ -61,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Move Code
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && canMove)
         {
             rigidbody2d.velocity = new Vector2(Vector2.left.x * moveSpeed, rigidbody2d.velocity.y);
 
@@ -79,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
                 this.gameObject.GetComponent<Animator>().Play("Idle");
             }
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) && canMove)
         {
             rigidbody2d.velocity = new Vector2(Vector2.right.x * moveSpeed, rigidbody2d.velocity.y);
 
@@ -98,20 +99,20 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.A))
+        if (Input.GetKeyUp(KeyCode.A) && canMove)
         {
             rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
             this.gameObject.GetComponent<Animator>().Play("Idle");
         }
 
-        if (Input.GetKeyUp(KeyCode.D))
+        if (Input.GetKeyUp(KeyCode.D) && canMove)
         {
             rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
             this.gameObject.GetComponent<Animator>().Play("Idle");
         }
 
         // Jump Code
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && canMove)
         {
             if (IsGrounded())
             {
@@ -129,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
             this.gameObject.GetComponent<Animator>().Play("JumpRight");
         }
 
-        if (Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.W) && canMove)
         {
             if (rigidbody2d.velocity.y > 0)
             {
@@ -151,7 +152,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator Ram()
     {
-        
+        canMove = false;
         if (facingRight)
         {
             rigidbody2d.velocity = new Vector2(Vector2.right.x * moveSpeed * 2, rigidbody2d.velocity.y);
@@ -163,6 +164,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         rigidbody2d.velocity = new Vector2(0f, rigidbody2d.velocity.y);
         ram = false;
+        canMove = true;
     }
 
     private bool IsGrounded()

@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public Sprite right;
     private bool facingRight = true;
     public bool doubleJump;
+    public bool boomerang = false;
     private bool canDoubleJump;
     private bool ram = false;
     private bool canMove = true;

@@ -19,11 +19,13 @@ public class PlayerMovement : MonoBehaviour
     private bool canDoubleJump;
     private bool ram = false;
     private bool canMove = true;
+    private Quaternion defaultRotation;
 
     private void Start()
     {
         rigidbody2d = transform.GetComponent<Rigidbody2D>();
         gravity = rigidbody2d.gravityScale;
+        defaultRotation = transform.rotation;
     }
 
     // Update is called once per frame
@@ -115,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
         // Jump Code
         if (Input.GetKeyDown(KeyCode.W) && canMove)
         {
+            transform.rotation = defaultRotation;
             if (IsGrounded())
             {
                 rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, Vector2.up.y * jumpVelocity);

@@ -9,4 +9,10 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+
+    public void exit()
+    {
+        UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
+    }
 }

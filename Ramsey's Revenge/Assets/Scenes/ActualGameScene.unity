@@ -2337,7 +2337,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 700, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &208821939
 GameObject:
@@ -9261,7 +9261,7 @@ MonoBehaviour:
   dialogue:
     name: n
     sentences:
-    - "Ramsey:\nAhhh! What\u2019s happening?"
+    - "Ramsey:\nAhhh! What\u2019s happening? (Press R)"
     - "Alien:\nLet\u2019s see what we have here"
     - 'Ramsey:
 
@@ -9293,6 +9293,73 @@ MonoBehaviour:
     - 'Alien:
 
       ..A Goat'
+    - 'Ramsey:
+
+      RAM-sey. See? Like a ram!'
+    - 'Alien:
+
+      ...'
+    - 'Alien:
+
+      ...'
+    - 'Alien:
+
+      ...We would waste more resouces if I took you back'
+    - 'Alien:
+
+      Guess you''re staying here?'
+    - 'Ramsey:
+
+      Oh. Was I supposed to go somewhere?'
+    - 'Ramsey:
+
+      I must have forgotten. I do that alot.'
+    - 'Alien:
+
+      This has never happened before.'
+    - "Ramsey: \nNo, I just said I forgot things all the time."
+    - '
+
+      *radio sounds*'
+    - "Alien: \nOk, I've checked everything on this planet."
+    - "Alien: \nStart the mass abduction."
+    - "Ramsey:\nWhat! Oh no, what should I do? We\u2019re gonna get abducted!"
+    - 'Alien:
+
+      But leave this goat'
+    - 'Ramsey:
+
+      What?!'
+    - 'Ramsey:
+
+      And I''m not a goat!'
+    - 'Radio:
+
+      ...Why?'
+    - 'Alien:
+
+      It''s a very stupid goat'
+    - 'Radio:
+
+      I can tell'
+    - 'Alien:
+
+      We would waste our resouces if we took it'
+    - 'Radio:
+
+      Yeah, sounds like it'
+    - 'Ramsey:
+
+      I am hurt by this accusation'
+    - 'Ramsey:
+
+      Billy is dumber'
+    - 'Alien:
+
+      No, I checked. He is not'
+    - 'Ramsey:
+
+      "GET BACK HERE"'
   dialogeBox: {fileID: 239005321}
   dialogueImageToBe: {fileID: 21300000, guid: 763cdf5563517804ebfe476dff879882, type: 3}
   dialogueCollider: {fileID: 952180791}

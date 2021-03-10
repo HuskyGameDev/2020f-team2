@@ -5938,7 +5938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACYn+tvpmmSdAIAABkFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzg3jD7Cht9YhpAdCJrSTiy/CXmMNsuSR5ADJ8N+7km3s0hNi377Ve7srfxEmdA2ZkWqtWL6ROZDvE2LP5NtkAJ/hTA9S7Ngn9DnvLDelTaIu540aJjHuW5qWFRjFsh/iwG2yh8FGsEKqapUfIJHaaAwXlGtASElj2QJDXxNyxp+HpaVc8BTE9vSJp6U3ueIxA2FADal+EM+n4bxLn4XRNFp4XhB2rJbUiIzTqobcOhi4YbxEbhx3ZN9b+NPAX0aOI9Bolx5OYy+aBcHCussk50x3com51K4dCa11g2YxIWcU7TuNvhVfAjuUxnoZs7dFocF0zVH08sgUtrEtS37KtrcV1cdW7gfljb0omLfq2qKb//AH38GFktVzf6/v2TtMybLjG71kVJtR88fhx5Fy17UT5Ue65/BegniRayUbkSNoVGOpjYbgcfh7s5aUkB2HeCv1LtjUwxj6WfeTth6uzv054azaW2g6awM7Lut2JHbkoHBIv1Cx2x/d1cColfFHw296GC9aBzwxpQ1CnU1h9e1lo2wqWbmmWTuNSaQS4MKd6hoE5ebyimXM/QzvsNG1d8gTtU+qu7zD+pdyR3HhId/z7qBXebpNS5fytAFdbhvDmYBBtAVesE+JFKJdsXFPetquUQXNRrRDw/J/d4vsZ4vIi735Mgpo5BX7B5jN/SCnYVT4sRfuQ+KWjwn0SflrK7RrD45NDMUFLlr/pZmsFa3duueKntbss5KjljNRyF2mAMS2rXATDgovwQear3KGDdqBMUy4eZOvlHCZHSFPb4VS53R1NoqmQ5WU1OxDGhtJSeI+LSm5kutfUEsDBBQAAAgIAACYn+uzTV4ybQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrRSkomFmYG5gamlmVGimUFakm6qiamhUUqisVmaobmBcZKxUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACYn+tvpmmSdAIAABkFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACYn+uzTV4ybQAAAHgAAAAJACQAAAAAAAAAAAAAAMECAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAeQMAAAAA
+    dataString: UEsDBBQAAAgIAACYn+uZnq4abwIAAA8FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty2jAU/RVG64aRH7y6ax1CuiBkQjvZeCPsa6xBljySHCAZ/r1XssEuXSHOOffq3If8Rbg0NWRW6ZXm+VrlQL6PiDuTb6OefIYT2yu55Z9w1bzz3JZOxLzmjVmuEA9cmFEVWM2zH3IvnJgi2EheKF0t8z0kyliDcMGEAaS0si5aIvQ1Iif8eVi4kDOewpk7feJpQUcXPGYgLeheGsRR1GnjkI6DTt2KG5kJVtWQO+d9TBQv6JjOF11cQOliPI99hMTyOnE0joNgGgZzlzNTQnDTmST2XPsmJKw2DZaIgpwzLNo7C5zlEvi+tK6CYfSmKAzYriWanR+5xua1aclP1Xa0YubQmv1gonEXhZOpd9cmXf/HPwSeLrSqnq/3YlUI2ZJnhzd2zpixg5YP4ceBc9+zIxMHthPwXoJ8USutGpkjaXXjQhsD4WP/91ZaUkJ26PHW6h3Y1P0QrhO+ztfVcPHVnxLBq52jxnELbIWq25FMEACNQ/qFjv3WmC4Hos7GHwO/2X64Xh3xxLWxSHVlSudvpxrtpGTpm+bKaWyitAQPd65rkEzY8yumsfczvOMG194xT8w9pO7yjru+j7sQD/d6Su+oV3W8TcuU6rgGU24aK7iE3rQjXrBPiZKyXbFhT65h20YXLBuE7Rue/7tbZBfPp3RGJ4tpyKa02D1APAnCnEXTIpjRaBcRv3xcYp1MvLZGu/bg2GSfXOKiuYxrxuVopVnt1z3X7Ljin5UatJzLQm0zDSA3bYabcdB4CT7QfJlzbNAWrOXSz5t8pUSo7AB5ekuU+kqXJ6tZ2mdJSc0/lHVIShL/QUnJhVz+AlBLAwQUAAAICAAAmJ/r7sK2zXQAAACcAAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNVRUEovSizIKAaJgDilmSkgdrRSkomFmYG5gamlmVGimUFakm6qiamhUUqisVmaobmBcZKxko5CXmlODjIZCzShpLIg1S8xNxViSkBiSUZaZl5KZl66nntRZoo7yDJsOmsBUEsBAi0AFAAACAgAAJif65merhpvAgAADwUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJif6+7Cts10AAAAnAAAAAkAJAAAAAAAAAAAAAAAvAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAAB7AwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -18816,11 +18816,11 @@ GameObject:
   - component: {fileID: 1908097205}
   - component: {fileID: 1908097204}
   - component: {fileID: 1908097203}
-  - component: {fileID: 1908097202}
   - component: {fileID: 1908097201}
+  - component: {fileID: 1908097202}
   - component: {fileID: 1908097200}
   m_Layer: 0
-  m_Name: Enemy (15)
+  m_Name: Big Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18836,7 +18836,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 3de273d9f5f95e44b9ca305fc0cc026c, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.081668615, y: 0.35390425}
@@ -18861,7 +18861,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1908097199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13df37fd0fe8ff54c98c0db67aa2e6b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e7d3c7d40233de4dbd336255b5a4cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
@@ -18917,10 +18917,10 @@ MonoBehaviour:
   canSearch: 1
   canMove: 1
   maxSpeed: 30
-  gravity: {x: NaN, y: NaN, z: NaN}
+  gravity: {x: 0, y: -9.81, z: 0}
   groundMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   centerOffsetCompatibility: NaN
   orientation: 1
   enableRotation: 0
@@ -18950,7 +18950,7 @@ MonoBehaviour:
   drawGizmos: 1
   detailedGizmos: 0
   startEndModifier:
-    addPoints: 0
+    addPoints: 1
     exactStartPoint: 3
     exactEndPoint: 3
     useRaycasting: 0

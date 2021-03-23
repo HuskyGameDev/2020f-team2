@@ -12,6 +12,7 @@ public class DialogueTrigger : MonoBehaviour
     Image dialogueImage;
     [SerializeField] Collider2D dialogueCollider;
     [SerializeField] Text textBox;
+    [SerializeField] GameObject Ramsey;
     int currentSentence = 0;
 
     bool dialogueWasTriggered = false;
@@ -33,7 +34,12 @@ public class DialogueTrigger : MonoBehaviour
             {
                 dialogueImage.color = new Color(0, 0, 0, 0);
                 textBox.text = "";
+                if (Ramsey.transform.GetComponent<PlayerMovement>() != null)
+                {
+                    Ramsey.transform.GetComponent<PlayerMovement>().canMove = true;
+                }
             }
+
         }
     }
 
@@ -42,6 +48,12 @@ public class DialogueTrigger : MonoBehaviour
         if (collider.name == "Player")
         {
             dialogueWasTriggered = true;
+            if (Ramsey.transform.GetComponent<PlayerMovement>() != null)
+            {
+                //collider.transform.parent.GetComponent<PlayerMovement>().canMove = false;
+
+                Ramsey.transform.GetComponent<PlayerMovement>().canMove = false;
+            }
             //FindObjectOfType<DialogeManager>().StartDialogue(dialogue);
             manager = new DialogeManager();
             manager.StartDialogue(dialogue);

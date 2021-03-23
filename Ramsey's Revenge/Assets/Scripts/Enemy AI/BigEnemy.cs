@@ -5,59 +5,88 @@ using UnityEngine;
 
 public class BigEnemy : MonoBehaviour
 {
-    private int health = 100;
-    private int damage = 25;
+    private int health;
     public GameObject player;
     private bool attacking = false;
-    private Vector3 lastLocation;
-    private Rigidbody2D play;
-    private SpriteRenderer sprite;
+    private bool facingRight = true;
+    private bool turning = false;
+    private bool canMove = true;
+    public GameObject Position1;
+    public GameObject Position2;
+    public float speed;
+    public GameObject wall1;
+    public GameObject wall2;
 
     private void Start()
     {
-        //player = FindObjectOfType<PlayerHealth>();
-        //lastLocation = gameObject.transform.position;
-        play = FindObjectOfType<Rigidbody2D>();
-        sprite = GameObject.FindGameObjectWithTag("Enemy").GetComponent<SpriteRenderer>();
+        health = 500;
     }
 
     private void Update()
     {
         float distanceToPlayer = Vector3.Distance(player.transform.position, gameObject.transform.position);
-        if (distanceToPlayer < 25 && !attacking)
-        {
-            attacking = true;
-            Debug.Log("Enemy attack");
-            StartCoroutine(AttackPlayer());
-        }
 
         if (distanceToPlayer < 300)
         {
-            this.gameObject.GetComponent<Pathfinding.AIPath>().canSearch = true;
-            lastLocation = gameObject.transform.position;
+            if (player.transform.position.x > transform.position.x && !facingRight && !turning)
+            {
+                StartCoroutine(SlowTurn());
+            }
+            else if(player.transform.position.x < transform.position.x && facingRight && !turning)
+            {
+                StartCoroutine(SlowTurn());
+            }
+
+            if (canMove)
+            {
+                if (facingRight)
+                {
+                    transform.position = new Vector2(transform.position.x + speed, transform.position.y);
+                }
+                else
+                {
+                    transform.position = new Vector2(transform.position.x - speed, transform.position.y);
+                }
+            }
         }
         else
         {
-            //gameObject.transform.position = lastLocation;
-            //this.gameObject.GetComponent<Pathfinding.AIPath>().canSearch = false;
-        }
-        if (player.transform.position.x > transform.position.x)
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            if (facingRight && canMove)
+            {
+                transform.position = new Vector2(transform.position.x + speed, transform.position.y);
+                if (this.GetComponent<BoxCollider2D>().IsTouching(Position2.GetComponent<BoxCollider2D>()))
+                {
+                    StartCoroutine(SlowTurn());
+                }
+            }
+            else if (canMove)
+            {
+                transform.position = new Vector2(transform.position.x - speed, transform.position.y);
+                if (this.GetComponent<BoxCollider2D>().IsTouching(Position1.GetComponent<BoxCollider2D>()))
+                {
+                    StartCoroutine(SlowTurn());
+                }
+            }
         }
     }
 
-    private IEnumerator AttackPlayer()
+    private void Flip()
     {
-        //will play the animation and damage player
-        //gameObject.GetComponent<Animator>().Play("Attack");
-        player.GetComponent<PlayerHealth>().SendMessage("PlayerTakesDamage", damage);
-        yield return new WaitForSeconds(3f);
-        attacking = false;
+        facingRight = !facingRight;
+
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
+
+    private IEnumerator SlowTurn()
+    {
+        turning = true;
+        canMove = false;
+        yield return new WaitForSeconds(2f);
+        turning = false;
+        Flip();
+        canMove = true;
     }
 
     public void TakeDamage(int damageTaken)
@@ -65,6 +94,10 @@ public class BigEnemy : MonoBehaviour
         health -= damageTaken;
         this.gameObject.GetComponent<Animator>().Play("DamageTaken");
         if (health <= 0)
+        {
+            wall1.SendMessage("endFight");
+            wall2.SendMessage("endFight");
             Destroy(gameObject);
+        }
     }
 }

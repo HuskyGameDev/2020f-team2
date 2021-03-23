@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private int health = 100;
+    private int health;
     private int damage = 25;
     public GameObject player;
     private bool attacking = false;
@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour
         lastLocation = gameObject.transform.position;
         play = FindObjectOfType<Rigidbody2D>();
         sprite = GameObject.FindGameObjectWithTag("Enemy").GetComponent<SpriteRenderer>();
+        health = 100;
     }
 
     private void Update()

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -30,9 +31,8 @@ public class PlayerHealth : MonoBehaviour
         //}
         if (health <= 0)
         {
-            gameObject.transform.position = new Vector3(-155f, 40f, 0f);
-            playerCamera.transform.position = new Vector3(-80.9f, 103.2f, -1f);
-            health = 100;
+            SceneManager.LoadScene("Menu Scene");
+            SceneManager.UnloadSceneAsync("ActualGameScene");
         }
 
         if (health/25 > numOfHearts)

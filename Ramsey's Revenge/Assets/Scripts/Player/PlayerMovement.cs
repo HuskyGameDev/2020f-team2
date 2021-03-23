@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public bool boomerang = false;
     private bool canDoubleJump;
     private bool ram = false;
-    private bool canMove = true;
+    public bool canMove = true;
     private Quaternion defaultRotation;
 
     private void Start()

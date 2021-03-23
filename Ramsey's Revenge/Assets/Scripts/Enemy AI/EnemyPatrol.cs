@@ -8,6 +8,7 @@ public class EnemyPatrol : MonoBehaviour
     public float speed;
     private float waitTime;
     public float startWaitTime;
+    public int health;
     public GameObject player;
     public Sprite explode;
     public SpriteRenderer spriteRenderer;
@@ -66,5 +67,13 @@ public class EnemyPatrol : MonoBehaviour
             transform.position = new Vector2(transform.position.x, transform.position.y + 1);
             exploded = true;
         }
+    }
+
+    public void TakeDamage(int damageTaken)
+    {
+        health -= damageTaken;
+        //this.gameObject.GetComponent<Animator>().Play("DamageTaken");
+        if (health <= 0)
+            Destroy(gameObject);
     }
 }

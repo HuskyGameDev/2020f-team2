@@ -13,6 +13,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] Collider2D dialogueCollider;
     [SerializeField] Text textBox;
     [SerializeField] GameObject Ramsey;
+    [SerializeField] GameObject Enemy;
     int currentSentence = 0;
 
     bool dialogueWasTriggered = false;
@@ -38,6 +39,10 @@ public class DialogueTrigger : MonoBehaviour
                 {
                     Ramsey.transform.GetComponent<PlayerMovement>().canMove = true;
                 }
+                if (Enemy.transform.GetComponent<Enemy>() != null)
+                {
+                    Enemy.transform.GetComponent<Enemy>().canMove = true;
+                }
             }
 
         }
@@ -48,6 +53,10 @@ public class DialogueTrigger : MonoBehaviour
         if (collider.name == "Player")
         {
             dialogueWasTriggered = true;
+            if (Enemy.transform.GetComponent<Enemy>() != null)
+            {
+                Enemy.transform.GetComponent<Enemy>().canMove = false;
+            }
             if (Ramsey.transform.GetComponent<PlayerMovement>() != null)
             {
                 //collider.transform.parent.GetComponent<PlayerMovement>().canMove = false;

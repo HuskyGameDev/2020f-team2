@@ -676,6 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &52293619
 Animator:
   serializedVersion: 3
@@ -1867,6 +1868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &125331089
 Animator:
   serializedVersion: 3
@@ -3859,6 +3861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &330976122
 Animator:
   serializedVersion: 3
@@ -4115,7 +4118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335488615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 314, y: 134, z: 0}
+  m_LocalPosition: {x: 2.63, y: 134, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4217,6 +4220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!61 &335488623
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5838,6 +5842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &534621868
 Animator:
   serializedVersion: 3
@@ -6389,6 +6394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &543733301
 Animator:
   serializedVersion: 3
@@ -6811,6 +6817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &613633564
 Animator:
   serializedVersion: 3
@@ -7362,6 +7369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &642978774
 Animator:
   serializedVersion: 3
@@ -9132,6 +9140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &858393929
 Animator:
   serializedVersion: 3
@@ -9736,6 +9745,8 @@ MonoBehaviour:
   dialogueImageToBe: {fileID: 21300000, guid: 763cdf5563517804ebfe476dff879882, type: 3}
   dialogueCollider: {fileID: 952180791}
   textBox: {fileID: 195252309}
+  Ramsey: {fileID: 1458888681}
+  Enemy: {fileID: 335488615}
 --- !u!1 &979955110
 GameObject:
   m_ObjectHideFlags: 0
@@ -10034,6 +10045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &995921135
 Animator:
   serializedVersion: 3
@@ -12907,6 +12919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &1249691350
 Animator:
   serializedVersion: 3
@@ -15575,6 +15588,7 @@ MonoBehaviour:
   right: {fileID: 21300000, guid: 6ccaaba879792a94ea668acbebd55d47, type: 3}
   doubleJump: 0
   boomerang: 0
+  canMove: 1
 --- !u!95 &1458888687
 Animator:
   serializedVersion: 3
@@ -16342,6 +16356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &1516388583
 Animator:
   serializedVersion: 3
@@ -17478,6 +17493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &1676459726
 Animator:
   serializedVersion: 3
@@ -18797,6 +18813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &1787483558
 Animator:
   serializedVersion: 3
@@ -20313,6 +20330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1458888681}
+  canMove: 0
 --- !u!95 &2016736750
 Animator:
   serializedVersion: 3

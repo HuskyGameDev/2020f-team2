@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private int health;
+    private int health = 100;
     private int damage = 25;
     public GameObject player;
     private bool attacking = false;
     private Vector3 lastLocation;
     private Rigidbody2D play;
     private SpriteRenderer sprite;
+    public bool canMove = false;
 
     private void Start()
     {
@@ -19,12 +20,17 @@ public class Enemy : MonoBehaviour
         lastLocation = gameObject.transform.position;
         play = FindObjectOfType<Rigidbody2D>();
         sprite = GameObject.FindGameObjectWithTag("Enemy").GetComponent<SpriteRenderer>();
-        health = 100;
     }
 
     private void Update()
     {
         float distanceToPlayer = Vector3.Distance(player.transform.position, gameObject.transform.position);
+        if (!canMove)
+        {
+            distanceToPlayer = 0;
+            this.gameObject.GetComponent<Pathfinding.AIPath>().canSearch = false;
+            return;
+        }
         if (distanceToPlayer < 25 && !attacking)
         {
             attacking = true;

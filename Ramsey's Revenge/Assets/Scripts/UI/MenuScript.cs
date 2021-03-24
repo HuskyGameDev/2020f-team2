@@ -8,7 +8,6 @@ public class MenuScript : MonoBehaviour
     public void changeMenuScene(string scene)
     {
         SceneManager.LoadScene(scene);
-        SceneManager.UnloadSceneAsync("Menu Scene");
     }
 
     public void exit()

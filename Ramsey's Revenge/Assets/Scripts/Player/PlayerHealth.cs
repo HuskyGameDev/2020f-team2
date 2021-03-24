@@ -18,7 +18,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = 100; // default health
+        //health = 100; // default health
     }
 
     // Update is called once per frame
@@ -32,7 +32,6 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             SceneManager.LoadScene("Menu Scene");
-            SceneManager.UnloadSceneAsync("ActualGameScene");
         }
 
         if (health/25 > numOfHearts)

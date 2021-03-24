@@ -7,13 +7,13 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
     DialogeManager manager;
-    [SerializeField] GameObject dialogeBox;
-    [SerializeField] Sprite dialogueImageToBe;
+    public GameObject dialogeBox;
+    public Sprite dialogueImageToBe;
     Image dialogueImage;
-    [SerializeField] Collider2D dialogueCollider;
-    [SerializeField] Text textBox;
-    [SerializeField] GameObject Ramsey;
-    [SerializeField] GameObject Enemy;
+    public Collider2D dialogueCollider;
+    public Text textBox;
+    public GameObject Ramsey;
+    public GameObject Enemy;
     int currentSentence = 0;
 
     bool dialogueWasTriggered = false;
@@ -41,7 +41,7 @@ public class DialogueTrigger : MonoBehaviour
                 }
                 if (Enemy.transform.GetComponent<Enemy>() != null)
                 {
-                    Enemy.transform.GetComponent<Enemy>().canMove = true;
+                    Enemy.GetComponent<Pathfinding.AIPath>().canMove = true;
                 }
             }
 
@@ -55,13 +55,14 @@ public class DialogueTrigger : MonoBehaviour
             dialogueWasTriggered = true;
             if (Enemy.transform.GetComponent<Enemy>() != null)
             {
-                Enemy.transform.GetComponent<Enemy>().canMove = false;
+                Enemy.GetComponent<Pathfinding.AIPath>().canMove = false;
             }
             if (Ramsey.transform.GetComponent<PlayerMovement>() != null)
             {
                 //collider.transform.parent.GetComponent<PlayerMovement>().canMove = false;
 
                 Ramsey.transform.GetComponent<PlayerMovement>().canMove = false;
+                Ramsey.GetComponent<Animator>().Play("Idle");
             }
             //FindObjectOfType<DialogeManager>().StartDialogue(dialogue);
             manager = new DialogeManager();

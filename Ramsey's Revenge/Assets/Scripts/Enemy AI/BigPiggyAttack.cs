@@ -20,6 +20,7 @@ public class BigPiggyAttack : MonoBehaviour
         //will play the animation and damage player
         player.GetComponent<PlayerHealth>().SendMessage("PlayerTakesDamage", damage);
         attacking = true;
+        this.GetComponentInParent<Animator>().Play("Attack");
         yield return new WaitForSeconds(3f);
         attacking = false;
     }

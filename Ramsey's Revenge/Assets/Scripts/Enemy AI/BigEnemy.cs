@@ -26,6 +26,11 @@ public class BigEnemy : MonoBehaviour
     {
         float distanceToPlayer = Vector3.Distance(player.transform.position, gameObject.transform.position);
 
+        if (distanceToPlayer < 50 && !attacking)
+        {
+            this.GetComponent<Animator>().Play("Attack");
+        }
+
         if (distanceToPlayer < 300)
         {
             if (player.transform.position.x > transform.position.x && !facingRight && !turning)
@@ -42,10 +47,12 @@ public class BigEnemy : MonoBehaviour
                 if (facingRight)
                 {
                     transform.position = new Vector2(transform.position.x + speed, transform.position.y);
+                    this.GetComponent<Animator>().Play("Walk");
                 }
                 else
                 {
                     transform.position = new Vector2(transform.position.x - speed, transform.position.y);
+                    this.GetComponent<Animator>().Play("Walk");
                 }
             }
         }
@@ -54,6 +61,7 @@ public class BigEnemy : MonoBehaviour
             if (facingRight && canMove)
             {
                 transform.position = new Vector2(transform.position.x + speed, transform.position.y);
+                this.GetComponent<Animator>().Play("Walk");
                 if (this.GetComponent<BoxCollider2D>().IsTouching(Position2.GetComponent<BoxCollider2D>()))
                 {
                     StartCoroutine(SlowTurn());
@@ -62,6 +70,7 @@ public class BigEnemy : MonoBehaviour
             else if (canMove)
             {
                 transform.position = new Vector2(transform.position.x - speed, transform.position.y);
+                this.GetComponent<Animator>().Play("Walk");
                 if (this.GetComponent<BoxCollider2D>().IsTouching(Position1.GetComponent<BoxCollider2D>()))
                 {
                     StartCoroutine(SlowTurn());
@@ -83,6 +92,7 @@ public class BigEnemy : MonoBehaviour
     {
         turning = true;
         canMove = false;
+        this.GetComponent<Animator>().Play("Idle");
         yield return new WaitForSeconds(2f);
         turning = false;
         Flip();

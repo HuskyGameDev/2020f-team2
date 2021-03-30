@@ -23,7 +23,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         waitTime = startWaitTime;
         randomSpot = Random.Range(0, moveSpots.Length);
-        damage = 5;
+        damage = 25;
         exploded = false;
     }
 

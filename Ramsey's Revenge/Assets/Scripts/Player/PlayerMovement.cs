@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Attack move code
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canMove)
         {
             if (!ram)
             {

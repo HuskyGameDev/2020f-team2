@@ -9,7 +9,7 @@ public class AttackTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         // Sends the collision message to the enemy code
-        if(col.isTrigger == true && col.CompareTag("Enemy"))
+        if (col.isTrigger == true && col.CompareTag("Enemy"))
         {
             col.SendMessageUpwards("TakeDamage", dmg);
         }

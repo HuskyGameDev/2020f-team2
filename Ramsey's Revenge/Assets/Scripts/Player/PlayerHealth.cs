@@ -67,4 +67,9 @@ public class PlayerHealth : MonoBehaviour
         health -= damage;
         this.gameObject.GetComponent<Animator>().Play("DamageTaken");
     }
+
+    public void heal(int amount)
+    {
+        health = health + amount;
+    }
 }

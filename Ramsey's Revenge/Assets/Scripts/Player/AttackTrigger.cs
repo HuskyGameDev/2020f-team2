@@ -11,16 +11,9 @@ public class AttackTrigger : MonoBehaviour
         // Sends the collision message to the enemy code
         if(col.isTrigger == true && col.CompareTag("Enemy"))
         {
-            StartCoroutine(bounce(col));
             col.SendMessageUpwards("TakeDamage", dmg);
         }
     }
 
-    private IEnumerator bounce(Collider2D col)
-    {
-        col.isTrigger = false;
-        yield return new WaitForSeconds(0.5f);
-        if (col != null)
-            col.isTrigger = true;
-    }
+    
 }

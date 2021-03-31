@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     private Vector3 lastLocation;
     private Rigidbody2D play;
     private SpriteRenderer sprite;
+    public GameObject heart;
 
     private void Start()
     {
@@ -26,7 +27,7 @@ public class Enemy : MonoBehaviour
     {
         float distanceToPlayer = Vector3.Distance(player.transform.position, gameObject.transform.position);
         
-        if (distanceToPlayer < 25 && !attacking)
+        if (distanceToPlayer < 25 && !attacking && !player.GetComponent<PlayerMovement>().ram)
         {
             attacking = true;
             Debug.Log("Enemy attack");
@@ -63,9 +64,33 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damageTaken)
     {
+        StartCoroutine(bounce());
         health -= damageTaken;
         this.gameObject.GetComponent<Animator>().Play("DamageTaken");
         if (health <= 0)
-            Destroy(gameObject);
+        {
+            System.Random rand = new System.Random();
+            if(rand.Next(0, 10) > 7)
+            {
+                GameObject newHeart;
+                newHeart = Instantiate(heart, this.transform.position, this.transform.rotation);
+                newHeart.GetComponent<SpriteRenderer>().enabled = true;
+            }
+
+            StartCoroutine(destroyEnemy());
+        }
+    }
+
+    private IEnumerator bounce()
+    {
+        this.GetComponent<BoxCollider2D>().isTrigger = false;
+        yield return new WaitForSeconds(0.5f);
+        this.GetComponent<BoxCollider2D>().isTrigger = true;
+    }
+
+    private IEnumerator destroyEnemy()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Destroy(gameObject);
     }
 }

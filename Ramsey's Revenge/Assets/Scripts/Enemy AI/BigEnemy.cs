@@ -10,7 +10,7 @@ public class BigEnemy : MonoBehaviour
     private bool attacking = false;
     private bool facingRight = true;
     private bool turning = false;
-    private bool canMove = true;
+    public bool canMove = true;
     public GameObject Position1;
     public GameObject Position2;
     public float speed;

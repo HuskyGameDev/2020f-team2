@@ -43,6 +43,7 @@ public class DialogueTrigger : MonoBehaviour
                 {
                     Enemy.GetComponent<Pathfinding.AIPath>().canMove = true;
                 }
+                FindObjectOfType<PauseMenu>().canPause = true;
             }
 
         }
@@ -53,6 +54,7 @@ public class DialogueTrigger : MonoBehaviour
         if (collider.name == "Player")
         {
             dialogueWasTriggered = true;
+            FindObjectOfType<PauseMenu>().canPause = false;
             if (Enemy.transform.GetComponent<Enemy>() != null)
             {
                 Enemy.GetComponent<Pathfinding.AIPath>().canMove = false;

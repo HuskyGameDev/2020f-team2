@@ -11,14 +11,12 @@ public class PauseMenu : MonoBehaviour
     private Pathfinding.AIPath[] enemies;
     public bool canPause;
     private Vector2 savedVelocity;
-    private BigEnemy bigEnemy;
 
     // Start is called before the first frame update
     void Start()
     {
         isPaused = false;
         canPause = true;
-        bigEnemy = FindObjectOfType<BigEnemy>();
     }
 
     // Update is called once per frame
@@ -32,8 +30,8 @@ public class PauseMenu : MonoBehaviour
             player.GetComponent<PlayerMovement>().canMove = false;
             savedVelocity = player.GetComponent<Rigidbody2D>().velocity;
             player.GetComponent<Rigidbody2D>().simulated = false;
-            bigEnemy.StopAllCoroutines();
-            bigEnemy.canMove = false;
+            FindObjectOfType<BigEnemy>().StopAllCoroutines();
+            FindObjectOfType<BigEnemy>().canMove = false;
             enemies = FindObjectsOfType<Pathfinding.AIPath>();
             numEnemies = FindObjectsOfType<Pathfinding.AIPath>().Length;
             int i;
@@ -57,8 +55,7 @@ public class PauseMenu : MonoBehaviour
         player.GetComponent<PlayerMovement>().canMove = true;
         player.GetComponent<Rigidbody2D>().simulated = true;
         player.GetComponent<Rigidbody2D>().velocity = savedVelocity;
-        bigEnemy.canMove = true;
-        bigEnemy.turning = false;
+        FindObjectOfType<BigEnemy>().canMove = true;
         enemies = FindObjectsOfType<Pathfinding.AIPath>();
         numEnemies = FindObjectsOfType<Pathfinding.AIPath>().Length;
         int i;

@@ -41,7 +41,7 @@ public class Fire : MonoBehaviour
         count++;
         if (count == time)//Gets rid of the spit after a certain amount of time
         {
-            Destroy(GetComponent<Collider2D>().gameObject);
+            Destroy(gameObject);
         }
     }
     //private IEnumerator AttackPlayer()
@@ -57,6 +57,6 @@ public class Fire : MonoBehaviour
         {
             player.GetComponent<PlayerHealth>().SendMessage("PlayerTakesDamage", damage);
         }
-        Destroy(GetComponent<Collision2D>().gameObject);
+        //Destroy(gameObject);
     }
 }

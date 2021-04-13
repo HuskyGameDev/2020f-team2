@@ -6,10 +6,16 @@ public class BigPiggyAttack : MonoBehaviour
 {
     private bool attacking = false;
     private float damage = 50f;
+    private BigEnemy parent;
+
+    private void Start()
+    {
+        parent = FindObjectOfType<BigEnemy>();
+    }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player") && !attacking)
+        if (col.CompareTag("Player") && !parent.turning && !attacking)
         {
             StartCoroutine(AttackPlayer(col));
         }
@@ -18,11 +24,13 @@ public class BigPiggyAttack : MonoBehaviour
     private IEnumerator AttackPlayer(Collider2D player)
     {
         //will play the animation and damage player
-        player.GetComponent<PlayerHealth>().SendMessage("PlayerTakesDamage", damage);
         attacking = true;
+        parent.canMove = false;
+        player.GetComponent<PlayerHealth>().SendMessage("PlayerTakesDamage", damage);
         this.GetComponentInParent<Animator>().Play("Attack");
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         attacking = false;
+        parent.canMove = true;
     }
 
     private IEnumerator bounce()

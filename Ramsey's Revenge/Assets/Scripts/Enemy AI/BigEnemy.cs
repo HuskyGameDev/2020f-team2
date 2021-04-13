@@ -7,7 +7,6 @@ public class BigEnemy : MonoBehaviour
 {
     public int health;
     public GameObject player;
-    private bool attacking = false;
     private bool facingRight = true;
     public bool turning = false;
     public bool canMove = true;
@@ -25,11 +24,6 @@ public class BigEnemy : MonoBehaviour
     private void Update()
     {
         float distanceToPlayer = Vector3.Distance(player.transform.position, gameObject.transform.position);
-
-        if (distanceToPlayer < 50 && !attacking)
-        {
-            this.GetComponent<Animator>().Play("Attack");
-        }
 
         if (distanceToPlayer < 300)
         {

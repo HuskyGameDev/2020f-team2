@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class BigEnemy : MonoBehaviour
 {
-    public int health;
+    private int health;
     public GameObject player;
     private bool attacking = false;
     private bool facingRight = true;
-    public bool turning = false;
+    private bool turning = false;
     public bool canMove = true;
     public GameObject Position1;
     public GameObject Position2;
@@ -19,7 +19,7 @@ public class BigEnemy : MonoBehaviour
 
     private void Start()
     {
-
+        health = 500;
     }
 
     private void Update()

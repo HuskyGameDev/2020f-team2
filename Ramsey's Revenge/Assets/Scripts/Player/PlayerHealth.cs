@@ -72,4 +72,25 @@ public class PlayerHealth : MonoBehaviour
     {
         health = health + amount;
     }
+
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        Transform play = GameObject.FindGameObjectWithTag("Player").transform;
+
+        health = data.health;
+        numOfHearts = data.numOfHearts;
+
+        Vector3 position;
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+
+        play.position = position;
+    }
 }

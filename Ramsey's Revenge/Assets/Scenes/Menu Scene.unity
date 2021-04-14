@@ -1811,7 +1811,6 @@ GameObject:
   - component: {fileID: 1570228446}
   - component: {fileID: 1570228449}
   - component: {fileID: 1570228448}
-  - component: {fileID: 1570228450}
   - component: {fileID: 1570228447}
   m_Layer: 5
   m_Name: Ramsey
@@ -1896,20 +1895,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570228445}
   m_CullTransparentMesh: 0
---- !u!114 &1570228450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1570228445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6379ad149322ca1449d02b271bd40ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0.5
-  sprites: []
 --- !u!1 &1623296258
 GameObject:
   m_ObjectHideFlags: 0

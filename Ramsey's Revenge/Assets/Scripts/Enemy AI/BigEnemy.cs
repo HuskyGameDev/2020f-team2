@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class BigEnemy : MonoBehaviour
 {
-    private int health;
+    public int health;
     public GameObject player;
     private bool facingRight = true;
-    private bool turning = false;
+    public bool turning = false;
     public bool canMove = true;
     public GameObject Position1;
     public GameObject Position2;
@@ -18,7 +18,7 @@ public class BigEnemy : MonoBehaviour
 
     private void Start()
     {
-        health = 500;
+
     }
 
     private void Update()
@@ -31,7 +31,7 @@ public class BigEnemy : MonoBehaviour
             {
                 StartCoroutine(SlowTurn());
             }
-            else if(player.transform.position.x < transform.position.x && facingRight && !turning)
+            else if (player.transform.position.x < transform.position.x && facingRight && !turning)
             {
                 StartCoroutine(SlowTurn());
             }

@@ -72,7 +72,12 @@ public class BossAlien : MonoBehaviour
     {
         health -= damageTaken;
         if (health <= 0)
+        {
+            BossWalls[] walls = FindObjectsOfType<BossWalls>();
+            walls[0].endFight();
+            walls[1].endFight();
             Destroy(gameObject);
+        }
     }
     private IEnumerator SpitAttack(float time)
     {

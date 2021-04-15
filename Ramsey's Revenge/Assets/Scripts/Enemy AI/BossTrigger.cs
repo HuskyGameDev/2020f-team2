@@ -14,10 +14,13 @@ public class BossTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        this.GetComponent<BoxCollider2D>().enabled = false;
-        wall1.GetComponent<SpriteRenderer>().enabled = true;
-        wall1.GetComponent<BoxCollider2D>().enabled = true;
-        wall2.GetComponent<SpriteRenderer>().enabled = true;
-        wall2.GetComponent<BoxCollider2D>().enabled = true;
+        if (collision.CompareTag("Player"))
+        {
+            this.GetComponent<BoxCollider2D>().enabled = false;
+            wall1.GetComponent<SpriteRenderer>().enabled = true;
+            wall1.GetComponent<BoxCollider2D>().enabled = true;
+            wall2.GetComponent<SpriteRenderer>().enabled = true;
+            wall2.GetComponent<BoxCollider2D>().enabled = true;
+        }
     }
 }

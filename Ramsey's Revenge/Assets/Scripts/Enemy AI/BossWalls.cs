@@ -11,13 +11,13 @@ public class BossWalls : MonoBehaviour
         this.GetComponent<BoxCollider2D>().enabled = false;
     }
 
-    void startFight()
+    public void startFight()
     {
         this.GetComponent<SpriteRenderer>().enabled = true;
         this.GetComponent<BoxCollider2D>().enabled = true;
     }
 
-    void endFight()
+    public void endFight()
     {
         this.GetComponent<SpriteRenderer>().enabled = false;
         this.GetComponent<BoxCollider2D>().enabled = false;

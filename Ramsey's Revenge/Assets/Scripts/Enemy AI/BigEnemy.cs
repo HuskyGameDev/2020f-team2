@@ -15,6 +15,7 @@ public class BigEnemy : MonoBehaviour
     public float speed;
     public GameObject wall1;
     public GameObject wall2;
+    public GameObject heart;
 
     private void Start()
     {
@@ -101,6 +102,9 @@ public class BigEnemy : MonoBehaviour
         {
             wall1.SendMessage("endFight");
             wall2.SendMessage("endFight");
+            GameObject newHeart;
+            newHeart = Instantiate(heart, this.transform.position, this.transform.rotation);
+            newHeart.GetComponent<SpriteRenderer>().enabled = true;
             Destroy(gameObject);
         }
     }

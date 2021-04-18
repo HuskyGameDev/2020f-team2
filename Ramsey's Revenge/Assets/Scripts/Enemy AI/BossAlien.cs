@@ -9,6 +9,7 @@ public class BossAlien : MonoBehaviour
     public Transform mothership;
     public GameObject player;
     public GameObject danger;
+    public float maxDistance;
 
     private bool movingRight;
     private bool waiting;
@@ -25,7 +26,7 @@ public class BossAlien : MonoBehaviour
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);//Get the enemy moving
         //Debug.Log(Vector2.Distance(transform.position, player.transform.position));
-        if (Vector2.Distance(transform.position, player.transform.position) < 10f)//Chase the player they got too close
+        if (Vector2.Distance(transform.position, player.transform.position) < maxDistance)//Chase the player they got too close
         {
             if (player.transform.position.x > transform.position.x)//Chase the player to the right
             {
@@ -40,7 +41,7 @@ public class BossAlien : MonoBehaviour
         }
         else
         {
-            if (Vector2.Distance(transform.position, mothership.position) > 10f)//Keeps enemy in a certain range
+            if (Vector2.Distance(transform.position, mothership.position) > maxDistance)//Keeps enemy in a certain range
             {
                 if (movingRight == true)
                 {
@@ -53,12 +54,12 @@ public class BossAlien : MonoBehaviour
                     movingRight = true;
                 }
             }
-            if (Vector2.Distance(transform.position, mothership.position) > 10.1f)//Chased player too far? No problem, enemy will be teleported back home
+            if (Vector2.Distance(transform.position, mothership.position) > maxDistance+10f)//Chased player too far? No problem, enemy will be teleported back home
             {
                 transform.position = mothership.position;
             }
         }
-        if (Vector2.Distance(transform.position, player.transform.position) < 10f)
+        if (Vector2.Distance(transform.position, player.transform.position) < maxDistance)
         {
             Vector2 start = new Vector2(transform.position.x, transform.position.y + 1);
             //Instantiate(danger, start, Quaternion.identity);
@@ -84,6 +85,7 @@ public class BossAlien : MonoBehaviour
         waiting = false;
         yield return new WaitForSeconds(time);
         waiting = true;
+        Debug.Log("Shoot!!");
         Vector2 start = new Vector2(transform.position.x, transform.position.y + 1);
         Instantiate(danger, start, Quaternion.identity);
     }

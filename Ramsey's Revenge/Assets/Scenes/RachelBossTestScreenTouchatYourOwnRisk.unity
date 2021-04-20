@@ -490,6 +490,7 @@ MonoBehaviour:
   right: {fileID: 21300000, guid: 6ccaaba879792a94ea668acbebd55d47, type: 3}
   doubleJump: 0
   boomerang: 0
+  ram: 0
   canMove: 1
 --- !u!50 &1522889810
 Rigidbody2D:
@@ -781,6 +782,7 @@ MonoBehaviour:
   mothership: {fileID: 117847743}
   player: {fileID: 1522889804}
   danger: {fileID: 5627817759129956420, guid: 8ae387fe9da4fe64ebeb37fcca199317, type: 3}
+  maxDistance: 10
 --- !u!212 &2100490085
 SpriteRenderer:
   m_ObjectHideFlags: 0

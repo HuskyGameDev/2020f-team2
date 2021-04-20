@@ -30,11 +30,11 @@ public class Fire : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             if (target.position.x < transform.position.x)
             {
-                GetComponent<Rigidbody2D>().velocity = new Vector2(-50, target.position.y * 3);
+                GetComponent<Rigidbody2D>().velocity = new Vector2(-50, target.position.y);
             }
             else
             {
-                GetComponent<Rigidbody2D>().velocity = new Vector2(50, target.position.y * 3);
+                GetComponent<Rigidbody2D>().velocity = new Vector2(50, target.position.y);
             }
 
         }

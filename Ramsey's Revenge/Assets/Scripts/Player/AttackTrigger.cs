@@ -13,6 +13,10 @@ public class AttackTrigger : MonoBehaviour
         {
             col.SendMessageUpwards("TakeDamage", dmg);
         }
+        if (col.CompareTag("Gort"))
+        {
+            col.SendMessageUpwards("TakeDamage", dmg);
+        }
     }
 
     

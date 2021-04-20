@@ -10537,7 +10537,7 @@ GameObject:
   - component: {fileID: 1178543250}
   m_Layer: 0
   m_Name: GORT BOSS
-  m_TagString: Untagged
+  m_TagString: Gort
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10554,12 +10554,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acd3e282d796ff4b8efe8e040b278f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  health: 50
+  speed: 20
+  health: 500
   mothership: {fileID: 1471586338}
   player: {fileID: 1458888681}
   danger: {fileID: 5627817759129956420, guid: 8ae387fe9da4fe64ebeb37fcca199317, type: 3}
-  maxDistance: 200
+  maxDistance: 600
 --- !u!50 &1178543251
 Rigidbody2D:
   serializedVersion: 4
@@ -10572,7 +10572,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -10580,7 +10580,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 1
 --- !u!61 &1178543252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10605,7 +10605,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.188944, y: 15.398457}
+  m_Size: {x: 11, y: 15.398457}
   m_EdgeRadius: 0
 --- !u!212 &1178543253
 SpriteRenderer:
@@ -12473,7 +12473,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458888681}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -155.1, y: 35, z: 0}
+  m_LocalPosition: {x: 794, y: 801, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 1438711903}
@@ -12693,7 +12693,7 @@ GameObject:
   m_Layer: 0
   m_Name: Mothership
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12705,7 +12705,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471586337}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 320, y: 689.6, z: 0}
+  m_LocalPosition: {x: 700, y: 900, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

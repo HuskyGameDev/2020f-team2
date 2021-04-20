@@ -65,7 +65,7 @@ public class BossAlien : MonoBehaviour
             //Instantiate(danger, start, Quaternion.identity);
             if (waiting)
             {
-                StartCoroutine(SpitAttack(0.5f));
+                StartCoroutine(SpitAttack(3f, movingRight));
             }
         }
     }
@@ -80,13 +80,22 @@ public class BossAlien : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private IEnumerator SpitAttack(float time)
+    private IEnumerator SpitAttack(float time, bool right)
     {
+        int direction = 0;
         waiting = false;
         yield return new WaitForSeconds(time);
         waiting = true;
         Debug.Log("Shoot!!");
-        Vector2 start = new Vector2(transform.position.x, transform.position.y + 1);
+        if (right)
+        {
+            direction = 50;
+        }
+        else
+        {
+            direction = -50;
+        }
+        Vector2 start = new Vector2(transform.position.x + direction, transform.position.y);
         Instantiate(danger, start, Quaternion.identity);
     }
 }

@@ -14,6 +14,10 @@ public class MainMenuAnimations : MonoBehaviour
     private void Start()
     {
         image = GetComponent<Image>();
+        if (GameMusic.isMenuMusic != true)
+        {
+            GameObject.FindGameObjectWithTag("Music").GetComponent<GameMusic>().PlayMenuMusic();
+        }
     }
 
     // Update is called once per frame

@@ -4,13 +4,12 @@ using UnityEngine;
 public class GameMusic : MonoBehaviour
 {
     public AudioSource MenuMusic;
-    public AudioSource BattleMusic;
-    public AudioSource DefeatMusic;
-    public AudioSource VictoryMusic;
+    public AudioSource LevelMusic;
 
     private static GameMusic instance;
 
     static public Boolean isMenuMusic;
+    static public Boolean isLevelMusic;
 
     private void Awake()
     {
@@ -29,38 +28,22 @@ public class GameMusic : MonoBehaviour
     {
         MenuMusic.loop = true;
         isMenuMusic = true;
+        isLevelMusic = false;
         StopMusic();
         MenuMusic.Play();
     }
-    public void PlayBattleMusic()
+    public void PlayLevelMusic()
     {
-        BattleMusic.loop = true;
+        LevelMusic.loop = true;
         isMenuMusic = false;
+        isLevelMusic = true;
         StopMusic();
-        BattleMusic.Play();
-    }
-
-    public void PlayDefeatMusic()
-    {
-        DefeatMusic.loop = true;
-        isMenuMusic = false;
-        StopMusic();
-        DefeatMusic.Play();
-    }
-
-    public void PlayVictoryMusic()
-    {
-        VictoryMusic.loop = true;
-        isMenuMusic = false;
-        StopMusic();
-        VictoryMusic.Play();
+        LevelMusic.Play();
     }
 
     public void StopMusic()
     {
         MenuMusic.Stop();
-        BattleMusic.Stop();
-        DefeatMusic.Stop();
-        VictoryMusic.Stop();
+        LevelMusic.Stop();
     }
 }

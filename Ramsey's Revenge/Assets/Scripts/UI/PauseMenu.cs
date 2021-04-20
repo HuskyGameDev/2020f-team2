@@ -25,6 +25,11 @@ public class PauseMenu : MonoBehaviour
         // Code for pausing
         if (Input.GetKeyDown(KeyCode.P) && !isPaused && canPause)
         {
+            if (GameMusic.isMenuMusic != true)
+            {
+                GameObject.FindGameObjectWithTag("Music").GetComponent<GameMusic>().StopMusic();
+                GameObject.FindGameObjectWithTag("Music").GetComponent<GameMusic>().PlayMenuMusic();
+            }
             menu.SetActive(true);
             isPaused = true;
             player.GetComponent<PlayerMovement>().canMove = false;
@@ -50,6 +55,11 @@ public class PauseMenu : MonoBehaviour
     // Code for unpausing continued. Can be used by resume button.
     public void unPause()
     {
+        if (GameMusic.isLevelMusic != true)
+        {
+            GameObject.FindGameObjectWithTag("Music").GetComponent<GameMusic>().StopMusic();
+            GameObject.FindGameObjectWithTag("Music").GetComponent<GameMusic>().PlayLevelMusic();
+        }
         menu.SetActive(false);
         isPaused = false;
         player.GetComponent<PlayerMovement>().canMove = true;

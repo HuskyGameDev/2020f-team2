@@ -8,6 +8,11 @@ public class MenuScript : MonoBehaviour
     public void changeMenuScene(string scene)
     {
         SceneManager.LoadScene(scene);
+        if (GameMusic.isLevelMusic != true)
+        {
+            GameObject.FindGameObjectWithTag("Music").GetComponent<GameMusic>().StopMusic();
+            GameObject.FindGameObjectWithTag("Music").GetComponent<GameMusic>().PlayLevelMusic();
+        }
     }
 
     public void exit()

@@ -58,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!ram)
             {
+                FindObjectOfType<AudioManager>().PlaySound("Ram");
                 this.gameObject.GetComponent<Animator>().Play("Ram");
                 ram = true;
                 StartCoroutine(Ram());
@@ -76,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (IsGrounded())
             {
+                FindObjectOfType<AudioManager>().PlaySound("Walk");
                 this.gameObject.GetComponent<Animator>().Play("MoveRight");
             }
             else
@@ -94,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (IsGrounded())
             {
+                FindObjectOfType<AudioManager>().PlaySound("Walk");
                 this.gameObject.GetComponent<Animator>().Play("MoveRight");
             }
             else
@@ -101,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
                 this.gameObject.GetComponent<Animator>().Play("Idle");
             }
         }
+        else { FindObjectOfType<AudioManager>().StopSound("Walk"); }
 
         if (Input.GetKeyUp(KeyCode.A) && canMove)
         {
@@ -130,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
                     canDoubleJump = false;
                 }
             }
-
+            FindObjectOfType<AudioManager>().PlaySound("Jump");
             this.gameObject.GetComponent<Animator>().Play("JumpRight");
         }
 

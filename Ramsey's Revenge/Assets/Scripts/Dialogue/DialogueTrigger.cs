@@ -15,6 +15,7 @@ public class DialogueTrigger : MonoBehaviour
     public GameObject Ramsey;
     public GameObject Enemy;
     int currentSentence = 0;
+    public float timeRemaining = 10;
 
     bool dialogueWasTriggered = false;
 
@@ -24,29 +25,29 @@ public class DialogueTrigger : MonoBehaviour
     }
     private void Update()
     {
-        if (dialogueWasTriggered == true && Input.GetKeyDown("r"))
+        if (dialogueWasTriggered == true && Input.GetKeyDown(KeyCode.Return))
         {
-            if (currentSentence < dialogue.sentences.Length - 1)
-            {
-                currentSentence++;
-                textBox.text = dialogue.sentences[currentSentence];
-            }
-            else
-            {
-                dialogueImage.color = new Color(0, 0, 0, 0);
-                textBox.text = "";
-                if (Ramsey.transform.GetComponent<PlayerMovement>() != null)
-                {
-                    Ramsey.transform.GetComponent<PlayerMovement>().canMove = true;
-                }
-                if (Enemy.transform.GetComponent<Enemy>() != null)
-                {
-                    Enemy.GetComponent<Pathfinding.AIPath>().canMove = true;
-                }
-                FindObjectOfType<PauseMenu>().canPause = true;
-            }
 
-        }
+                if (currentSentence < dialogue.sentences.Length - 1)
+                {
+                    currentSentence++;
+                    textBox.text = dialogue.sentences[currentSentence];
+                }
+                else
+                {
+                    dialogueImage.color = new Color(0, 0, 0, 0);
+                    textBox.text = "";
+                    if (Ramsey.transform.GetComponent<PlayerMovement>() != null)
+                    {
+                        Ramsey.transform.GetComponent<PlayerMovement>().canMove = true;
+                    }
+                    if (Enemy.transform.GetComponent<Enemy>() != null)
+                    {
+                        Enemy.GetComponent<Pathfinding.AIPath>().canMove = true;
+                    }
+                    FindObjectOfType<PauseMenu>().canPause = true;
+                }
+            }
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -86,4 +87,12 @@ public class DialogueTrigger : MonoBehaviour
            // FindObjectOfType<DialogeManager>().StartDialogue(dialogue);
         }
     }
+
+    IEnumerator ExecuteAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        // Code to execute after the delay
+    }
+
 }

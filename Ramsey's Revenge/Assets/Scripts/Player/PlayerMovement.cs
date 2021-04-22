@@ -82,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
+                FindObjectOfType<AudioManager>().StopSound("Walk");
                 this.gameObject.GetComponent<Animator>().Play("Idle");
             }
         }
@@ -101,10 +102,10 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
+                FindObjectOfType<AudioManager>().StopSound("Walk");
                 this.gameObject.GetComponent<Animator>().Play("Idle");
             }
         }
-        else { FindObjectOfType<AudioManager>().StopSound("Walk"); }
 
         if (Input.GetKeyUp(KeyCode.A) && canMove)
         {
@@ -144,7 +145,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * .5f);
             }
-
+            FindObjectOfType<AudioManager>().StopSound("Jump");
             this.gameObject.GetComponent<Animator>().Play("Idle");
         }
     }

@@ -97,14 +97,25 @@ public class PlayerMovement : MonoBehaviour
 
             if (IsGrounded())
             {
-                FindObjectOfType<AudioManager>().PlaySound("Walk");
                 this.gameObject.GetComponent<Animator>().Play("MoveRight");
             }
             else
             {
-                FindObjectOfType<AudioManager>().StopSound("Walk");
                 this.gameObject.GetComponent<Animator>().Play("Idle");
             }
+        }
+
+        if (canMove && ( Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) )&& IsGrounded())
+        {
+            FindObjectOfType<AudioManager>().PlaySoundLoop("Walk");
+        }
+        else if (canMove && (Input.GetKeyDown(KeyCode.D)) && IsGrounded())
+        {
+            FindObjectOfType<AudioManager>().PlaySoundLoop("Walk");
+        }
+        else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        {
+            FindObjectOfType<AudioManager>().StopSound("Walk");
         }
 
         if (Input.GetKeyUp(KeyCode.A) && canMove)
@@ -135,8 +146,12 @@ public class PlayerMovement : MonoBehaviour
                     canDoubleJump = false;
                 }
             }
-            FindObjectOfType<AudioManager>().PlaySound("Jump");
             this.gameObject.GetComponent<Animator>().Play("JumpRight");
+        }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            FindObjectOfType<AudioManager>().PlaySound("Jump");
         }
 
         if (Input.GetKeyUp(KeyCode.W) && canMove)

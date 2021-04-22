@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour
 {
@@ -31,6 +32,17 @@ public class Enemy : MonoBehaviour
         {
             attacking = true;
             Debug.Log("Enemy attack");
+
+            int rand = Random.Range(0, 10);
+            if (rand % 2 == 0)
+            {
+                FindObjectOfType<AudioManager>().PlaySound("Enemy Attack 1");
+            }
+            else
+            {
+                FindObjectOfType<AudioManager>().PlaySound("Enemy Attack 2");
+            }
+            
             StartCoroutine(AttackPlayer());
         }
 

@@ -8682,6 +8682,7 @@ MonoBehaviour:
   textBox: {fileID: 195252309}
   Ramsey: {fileID: 1458888681}
   Enemy: {fileID: 335488615}
+  timeRemaining: 10
 --- !u!1 &995921132
 GameObject:
   m_ObjectHideFlags: 0
@@ -9532,6 +9533,22 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Jump
     audioClip: {fileID: 8300000, guid: a6b3e0d9af63df1439975b45d7fe2d0f, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: Enemy Attack 1
+    audioClip: {fileID: 8300000, guid: 0c8a70a1aacc49a4a88ccf0d1fd18d7b, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: Enemy Attack 2
+    audioClip: {fileID: 8300000, guid: c2023a4c49f08634686667a54276345c, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: Explosion
+    audioClip: {fileID: 8300000, guid: cef9a93f4e724634caaff99571ef303d, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: Goat
+    audioClip: {fileID: 8300000, guid: 48716d8be5fea1e419e421218687919b, type: 3}
     volume: 1
     source: {fileID: 0}
 --- !u!4 &1090998440

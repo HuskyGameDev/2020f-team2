@@ -62,6 +62,7 @@ public class EnemyPatrol : MonoBehaviour
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.name == "Player" && !exploded)
         {
+            FindObjectOfType<AudioManager>().PlaySound("Explosion");
             player.GetComponent<PlayerHealth>().SendMessage("PlayerTakesDamage", damage);
             spriteRenderer.sprite = explode;
             transform.position = new Vector2(transform.position.x, transform.position.y + 1);

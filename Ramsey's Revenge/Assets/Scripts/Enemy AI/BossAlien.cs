@@ -65,13 +65,14 @@ public class BossAlien : MonoBehaviour
             //Instantiate(danger, start, Quaternion.identity);
             if (waiting)
             {
-                StartCoroutine(SpitAttack(3f, movingRight));
+                StartCoroutine(SpitAttack(2f, movingRight));
             }
         }
     }
     public void TakeDamage(int damageTaken)//Allows Ramsey to kill the enemy
     {
         health -= damageTaken;
+        this.GetComponent<Animator>().Play("DamageTaken");
         if (health <= 0)
         {
             BossWalls[] walls = FindObjectsOfType<BossWalls>();
@@ -84,9 +85,7 @@ public class BossAlien : MonoBehaviour
     {
         int direction = 0;
         waiting = false;
-        yield return new WaitForSeconds(time);
-        waiting = true;
-        Debug.Log("Shoot!!");
+        //Debug.Log("Shoot!!");
         if (right)
         {
             direction = 50;
@@ -97,5 +96,8 @@ public class BossAlien : MonoBehaviour
         }
         Vector2 start = new Vector2(transform.position.x + direction, transform.position.y);
         Instantiate(danger, start, Quaternion.identity);
+        this.GetComponent<Animator>().Play("GortFiring");
+        yield return new WaitForSeconds(time);
+        waiting = true;
     }
 }

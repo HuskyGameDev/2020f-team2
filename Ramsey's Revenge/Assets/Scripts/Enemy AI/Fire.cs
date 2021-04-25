@@ -19,7 +19,7 @@ public class Fire : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
 
         count = 0;
-        damage = 5;
+        damage = 25;
     }
 
     // Update is called once per frame
@@ -30,11 +30,11 @@ public class Fire : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             if (target.position.x < transform.position.x)
             {
-                GetComponent<Rigidbody2D>().velocity = new Vector2(-50, -10);
+                GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, -10);
             }
             else
             {
-                GetComponent<Rigidbody2D>().velocity = new Vector2(50, -10);
+                GetComponent<Rigidbody2D>().velocity = new Vector2(speed, -10);
             }
 
         }

@@ -16,10 +16,11 @@ public class BigEnemy : MonoBehaviour
     public GameObject wall1;
     public GameObject wall2;
     public GameObject heart;
+    private Rigidbody2D bigPiggyRB;
 
     private void Start()
     {
-
+        bigPiggyRB = this.GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -41,12 +42,14 @@ public class BigEnemy : MonoBehaviour
             {
                 if (facingRight)
                 {
-                    transform.position = new Vector2(transform.position.x + speed, transform.position.y);
+                    //transform.position = new Vector2(transform.position.x + speed, transform.position.y);
+                    bigPiggyRB.velocity = new Vector2(0f + speed, bigPiggyRB.velocity.y);
                     this.GetComponent<Animator>().Play("Walk");
                 }
                 else
                 {
-                    transform.position = new Vector2(transform.position.x - speed, transform.position.y);
+                    //transform.position = new Vector2(transform.position.x - speed, transform.position.y);
+                    bigPiggyRB.velocity = new Vector2(0f - speed, bigPiggyRB.velocity.y);
                     this.GetComponent<Animator>().Play("Walk");
                 }
             }
@@ -55,7 +58,8 @@ public class BigEnemy : MonoBehaviour
         {
             if (facingRight && canMove)
             {
-                transform.position = new Vector2(transform.position.x + speed, transform.position.y);
+                //transform.position = new Vector2(transform.position.x + speed, transform.position.y);
+                bigPiggyRB.velocity = new Vector2(0f + speed, bigPiggyRB.velocity.y);
                 this.GetComponent<Animator>().Play("Walk");
                 if (this.GetComponent<BoxCollider2D>().IsTouching(Position2.GetComponent<BoxCollider2D>()))
                 {
@@ -64,7 +68,8 @@ public class BigEnemy : MonoBehaviour
             }
             else if (canMove)
             {
-                transform.position = new Vector2(transform.position.x - speed, transform.position.y);
+                //transform.position = new Vector2(transform.position.x - speed, transform.position.y);
+                bigPiggyRB.velocity = new Vector2(0f - speed, bigPiggyRB.velocity.y);
                 this.GetComponent<Animator>().Play("Walk");
                 if (this.GetComponent<BoxCollider2D>().IsTouching(Position1.GetComponent<BoxCollider2D>()))
                 {
@@ -87,6 +92,7 @@ public class BigEnemy : MonoBehaviour
     {
         turning = true;
         canMove = false;
+        bigPiggyRB.velocity = new Vector2(0f, bigPiggyRB.velocity.y);
         this.GetComponent<Animator>().Play("Idle");
         yield return new WaitForSeconds(2f);
         turning = false;
